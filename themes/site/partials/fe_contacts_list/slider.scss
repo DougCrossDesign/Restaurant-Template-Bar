@@ -1,0 +1,102 @@
+
+
+
+.contacts-list-slider-img{
+	width:170px;
+	height:170px;
+	border:2px dotted $c2;
+	padding:5px;
+	@include border-radius(50%);
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 10px;
+	div{
+		@include border-radius(50%);
+		overflow: hidden;
+	}
+}
+
+.contacts-list-list-name{
+	font-family: $font2;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size:22px;
+	line-height: 22px;
+	color:$c1;
+}
+
+.contacts-list-list-subt{
+	font-family: $font2;
+	color:$c2;
+	margin-bottom: 10px;
+}
+
+.contacts-list-list-cr{
+
+}
+
+
+.contacts-list-slider{
+
+	margin-bottom: 80px;
+
+	.slick-slide{
+		padding:0px 10px;
+		text-align: center;
+	}
+
+	.images-row-item{
+		padding:0px 5px;
+	}
+	.slick-list{
+		display:block;
+	}
+	.slick-arrow{
+		display:block;
+		position:absolute;
+		top:0;
+		bottom:0;
+		width:30px;
+		height:30px;
+		line-height:30px;
+		font-size: 30px;
+		margin:auto 0;
+		text-align:center;
+		color:$c1; border:none;
+		border-radius:40px;
+		cursor:pointer;
+		z-index:1;
+	}
+	.slick-prev{
+		left:-10px;
+	}
+	.slick-next{
+		right:-10px;
+	}
+	.slick-dots{
+		display:block;
+		position:absolute;
+		left:0;
+		bottom:10px;
+		width:100%;
+		padding:10px 0;
+		text-align:center;
+	}
+	.slick-dots li{
+		display:inline-block;
+		margin:5px;
+	}
+	.slick-dots button{
+		width:12px;
+		height:12px;
+		text-indent:-9999px;
+		background-color:#bebdbd;
+		border:none;
+		border-radius:20px;
+	}
+	.slick-active button{
+		background-color:#000;
+	}
+
+}

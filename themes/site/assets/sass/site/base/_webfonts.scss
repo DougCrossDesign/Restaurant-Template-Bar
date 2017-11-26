@@ -1,0 +1,350 @@
+
+/*!--- Webfonts ---*/
+
+/*-----------------------------------
+	Fonts Files
+  IE8 and Below Requires EOT
+  WOFF, WOFF2, TTF for normal
+--------------------------------*/
+/* open sans*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+
+
+/*-----------------------------------
+	Play Fair
+-----------------------------------*/
+@font-face {
+    font-family: 'playfair';
+    src: url('fonts/playfairdisplay-black-webfont.eot');
+    src: url('fonts/playfairdisplay-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/playfairdisplay-black-webfont.woff2') format('woff2'),
+         url('fonts/playfairdisplay-black-webfont.woff') format('woff'),
+         url('fonts/playfairdisplay-black-webfont.svg#playfair_displayblack') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('fonts/playfairdisplay-regular-webfont.eot');
+    src: url('fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/*-----------------------------------
+	Museo Sans
+-----------------------------------*/
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museosans-300-webfont.eot');
+	src: url('fonts/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/museosans-300-webfont.woff2') format('woff2'),
+		 url('fonts/museosans-300-webfont.woff') format('woff'),
+		 url('fonts/museosans-300-webfont.ttf') format('truetype'),
+		 url('fonts/museosans-300-webfont.svg#museo_sans300') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museosans_500-webfont.eot');
+	src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/museosans_500-webfont.woff2') format('woff2'),
+		 url('fonts/museosans_500-webfont.woff') format('woff'),
+		 url('fonts/museosans_500-webfont.ttf') format('truetype'),
+		 url('fonts/museosans_500-webfont.svg#museo_sans500') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museosans_500-webfont.eot');
+	src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/museosans_500-webfont.woff2') format('woff2'),
+		 url('fonts/museosans_500-webfont.woff') format('woff'),
+		 url('fonts/museosans_500-webfont.ttf') format('truetype'),
+		 url('fonts/museosans_500-webfont.svg#museo_sans500') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('fonts/museosans-700-webfont.eot');
+	src: url('fonts/museosans-700-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/museosans-700-webfont.woff2') format('woff2'),
+		 url('fonts/museosans-700-webfont.woff') format('woff'),
+		 url('fonts/museosans-700-webfont.ttf') format('truetype'),
+		 url('fonts/museosans-700-webfont.svg#museo_sans700') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+/*-----------------------------------
+    Bungee
+-----------------------------------*/
+@font-face {
+    font-family: 'bungee';
+    src: url('fonts/bungee-regular-webfont.woff2') format('woff2'),
+         url('fonts/bungee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-----------------------------------
+    AYC Base Icon Set
+-----------------------------------*/
+
+@font-face {
+    font-family: 'aycicon';
+    src:    url('fonts/aycbase.eot?jqd6fb');
+    src:    url('fonts/aycbase.eot?jqd6fb#iefix') format('embedded-opentype'),
+        url('fonts/aycbase.ttf?jqd6fb') format('truetype'),
+        url('fonts/aycbase.woff?jqd6fb') format('woff'),
+        url('fonts/aycbase.svg?jqd6fb#aycbase') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="aycicon-"], [class*=" aycicon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'aycicon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.aycicon-books:before {
+    content: "\e900";
+}
+.aycicon-books2:before {
+    content: "\e901";
+}
+.aycicon-cal-check:before {
+    content: "\e902";
+}
+.aycicon-calendar:before {
+    content: "\e903";
+}
+.aycicon-calendar_square:before {
+    content: "\e904";
+}
+.aycicon-cart_empty:before {
+    content: "\e905";
+}
+.aycicon-change:before {
+    content: "\e906";
+}
+.aycicon-chat:before {
+    content: "\e907";
+}
+.aycicon-clock:before {
+    content: "\e908";
+}
+.aycicon-clock_sq_hands:before {
+    content: "\e909";
+}
+.aycicon-close:before {
+    content: "\e90a";
+}
+.aycicon-cloud-download:before {
+    content: "\e90b";
+}
+.aycicon-colorpicker:before {
+    content: "\e90c";
+}
+.aycicon-comment:before {
+    content: "\e90d";
+}
+.aycicon-company:before {
+    content: "\e90e";
+}
+.aycicon-down_arrow:before {
+    content: "\e90f";
+}
+.aycicon-down_arrow_circ:before {
+    content: "\e910";
+}
+.aycicon-down_arrow_thick:before {
+    content: "\e911";
+}
+.aycicon-down_arrow_thin:before {
+    content: "\e912";
+}
+.aycicon-download:before {
+    content: "\e913";
+}
+.aycicon-download_straight:before {
+    content: "\e914";
+}
+.aycicon-edit:before {
+    content: "\e915";
+}
+.aycicon-edit_circ:before {
+    content: "\e916";
+}
+.aycicon-edit_sq:before {
+    content: "\e917";
+}
+.aycicon-email:before {
+    content: "\e918";
+}
+.aycicon-email_solid:before {
+    content: "\e919";
+}
+.aycicon-enter:before {
+    content: "\e91a";
+}
+.aycicon-facebook:before {
+    content: "\e91b";
+}
+.aycicon-gear:before {
+    content: "\e91c";
+}
+.aycicon-globe:before {
+    content: "\e91d";
+}
+.aycicon-google_plus:before {
+    content: "\e91e";
+}
+.aycicon-graph:before {
+    content: "\e91f";
+}
+.aycicon-hamburger:before {
+    content: "\e920";
+}
+.aycicon-home:before {
+    content: "\e921";
+}
+.aycicon-info:before {
+    content: "\e922";
+}
+.aycicon-instagram:before {
+    content: "\e923";
+}
+.aycicon-instagram_solid:before {
+    content: "\e924";
+}
+.aycicon-left_arrow:before {
+    content: "\e925";
+}
+.aycicon-left_arrow_circ:before {
+    content: "\e926";
+}
+.aycicon-left_arrow_thick:before {
+    content: "\e927";
+}
+.aycicon-left_arrow_thin:before {
+    content: "\e928";
+}
+.aycicon-link:before {
+    content: "\e929";
+}
+.aycicon-linkedin:before {
+    content: "\e92a";
+}
+.aycicon-location:before {
+    content: "\e92b";
+}
+.aycicon-magnify:before {
+    content: "\e92c";
+}
+.aycicon-marker_concave:before {
+    content: "\e92d";
+}
+.aycicon-name:before {
+    content: "\e92e";
+}
+.aycicon-nav:before {
+    content: "\e92f";
+}
+.aycicon-news:before {
+    content: "\e930";
+}
+.aycicon-number_of_guests:before {
+    content: "\e931";
+}
+.aycicon-openbook:before {
+    content: "\e932";
+}
+.aycicon-phone:before {
+    content: "\e933";
+}
+.aycicon-pinterest:before {
+    content: "\e934";
+}
+.aycicon-remove_circ:before {
+    content: "\e935";
+}
+.aycicon-right_arrow:before {
+    content: "\e936";
+}
+.aycicon-right_arrow_circ:before {
+    content: "\e937";
+}
+.aycicon-right_arrow_thick:before {
+    content: "\e938";
+}
+.aycicon-right_arrow_thin:before {
+    content: "\e939";
+}
+.aycicon-share:before {
+    content: "\e93a";
+}
+.aycicon-share_box:before {
+    content: "\e93b";
+}
+.aycicon-share_circle:before {
+    content: "\e93c";
+}
+.aycicon-tag:before {
+    content: "\e93d";
+}
+.aycicon-trash:before {
+    content: "\e93e";
+}
+.aycicon-twitter:before {
+    content: "\e93f";
+}
+.aycicon-up_arrow:before {
+    content: "\e940";
+}
+.aycicon-up_arrow_circ:before {
+    content: "\e941";
+}
+.aycicon-up_arrow_thick:before {
+    content: "\e942";
+}
+.aycicon-up_arrow_thin:before {
+    content: "\e943";
+}
+.aycicon-youtube:before {
+    content: "\e944";
+}
+.aycicon-youtube_hrz:before {
+    content: "\e945";
+}
+.aycicon-youtube_play:before {
+    content: "\e946";
+}
+.aycicon-add_circ:before {
+    content: "\e947";
+}
+.aycicon-bell:before {
+    content: "\e948";
+}

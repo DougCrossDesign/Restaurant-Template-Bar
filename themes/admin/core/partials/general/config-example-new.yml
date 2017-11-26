@@ -1,0 +1,36 @@
+# Example partial config file
+name: core_accordion                        # The name of the partial - used primarily in building the inputs
+model: NoIdea
+table: cms_core_partial_accordion           # The table of the partial - very important, since the system will generate the table using this name if no schema.sql is found in the partial's folder
+enabled: true                               # simple on/off flag
+columns:                                    # a list of all the sql columns in the partial
+  title:                                    # the name of the column, this will become the sql column name and input name
+    type: text                              # type string of the IB_ group of constants at the top of the BaseModel class
+    length: 255                             # length of the column, generally all columns will become either varchar or int and this will be passed in as the length
+    enabled: true                           # simple on/off flag for this column
+    required : false                        # required flag. this adds empty checking and appropriate asterisks in back end
+meta:                                       # the term "meta" means "children" of this partial. e.g. a slider partial would have slides as its "children" or "meta"
+  name: item                                # name of the meta item, this is used when showing the group editing of meta and for input names
+  table: cms_core_partial_accordion_items   # The table of the children - very important since the system will generate a table named this if not schema.sql exists
+  order:                                    # this section defines display order of meta items as well as configures the order management page
+    column: displayorder                    # the column that should be used in the "order by"
+    order: asc                              # the direction: asc or desc
+    manageable: true                        # if this flag is true, a "manage ordering" button appears on the edit partial page where you can drag and drop order of the children. make true only if you're using a seperate column to handle order (e.g. "displayorder")
+    display: title                          # in the drag-and-drop ordering page, which column to show. If you pass in a column with type "image" it will generate a thumbnail. otherwise it will simply show the value of that column
+  columns:                                  # list of sql columns for each meta
+    title:                                  # the column name. this will be generated into creation sql
+      label: Title of the item              # the friendly label of this column, shows as a label above inputs
+      type: text                            # type string of the IB_ group of constants at the top of the BaseModel class
+      length: 255                           # length of the column, generally all columns will become either varchar or int and this will be passed in as the length
+      enabled: true                         # simple on/off flag for this column
+      required: true                        # required flag. this adds empty checking and appropriate asterisks in back end
+    content:
+      type: textarea
+      length: 255
+      enabled: true
+      required: true
+    displayorder:
+      type: hidden
+      length: 11
+      enabled: true
+      required: false

@@ -1,0 +1,52 @@
+
+
+
+
+/*--- Animations ---*/
+
+@mixin mykeyframes($keyname) {
+	@-webkit-keyframes #{$keyname} {
+		@content; 
+	}
+	@-moz-keyframes #{$keyname} {
+		@content;
+	}
+	@-ms-keyframes #{$keyname} {
+		@content;
+	}
+	@keyframes #{$keyname} {
+		@content;
+	} 
+}
+@mixin myanim($animname) {
+	-webkit-animation:$animname;
+	-moz-animation:$animname;
+	-o-animation:$animname;
+	animation:$animname;
+}
+
+/* 
+@include mykeyframes(INSERT_ANIM_NAME) {
+	0% {opacity: 0; right:-50px;}
+	100% {opacity: 1; right: 0;}
+}
+*/
+
+/*------------------------------------------------------------------
+	Use Animation
+	- add @include to element
+	- // .INSERT {@include myanim(INSERT_ANIM_NAME 1.5s ease);}
+------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------
+	Placeholder Simple
+-----------------------------------*/
+@mixin placeholder {
+	::-webkit-input-placeholder{ @content }
+	:-moz-placeholder{ @content }
+	::-moz-placeholder{ @content }
+	:-ms-input-placeholder{ @content }  
+}

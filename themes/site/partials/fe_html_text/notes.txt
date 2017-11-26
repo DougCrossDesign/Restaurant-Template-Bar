@@ -1,0 +1,10 @@
+Header [Optional]
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: Recommend less than 100
+
+
+Content 
+------------------------------------------
+Input Type 		: TinyMCE
+Char Count		: Unlimited

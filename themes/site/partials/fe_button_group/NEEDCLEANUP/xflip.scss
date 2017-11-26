@@ -1,0 +1,72 @@
+.button-group{
+	/*override*/
+	.btn{margin-bottom:5px;}
+}
+
+.button-group-center{text-align:center;}
+.button-group-left{text-align:left;}
+.button-group-right{text-align:right;}
+
+.button-group-full{
+	.btn{width:100%; display: block;}
+}
+.Xcard {
+  display: inline-block;
+  width: 200px;
+	padding:15px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color:#fff;
+	font-weight: $fw-bold;
+	letter-spacing: 1px;
+  position: relative;
+  margin: auto;
+  border-radius: 2px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.Xcard__front {
+  background-color: $c1;
+}
+
+.Xcard__back {
+  background-color: $c2;
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+.Xcard__front,
+.Xcard__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.75s;
+          transition: transform 0.75s;
+          a{
+             span{
+            width: 100%;
+            height: 100%;
+          }
+        }
+}
+
+
+
+.Xcard.effect__hover:hover  .Xcard__front{
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.Xcard.effect__hover:hover .Xcard__back {
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}

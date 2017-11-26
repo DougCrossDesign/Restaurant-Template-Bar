@@ -1,0 +1,9 @@
+<?php
+$aycsocurl = "http://www.socialassets.aycmedia.com/api/facebook.php?user=1&count=3";
+$aycsoccontent = file_get_contents($aycsocurl);
+$aycsoccontent = mb_convert_encoding($aycsoccontent, 'HTML-ENTITIES', "UTF-8");
+echo($aycsoccontent);
+?>
+
+Assets: http://www.socialassets.aycmedia.com/admin
+Get access token: http://instagram.pixelunion.net/

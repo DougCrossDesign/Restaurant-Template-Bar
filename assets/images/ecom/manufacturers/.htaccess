@@ -1,0 +1,4 @@
+Options -Indexes
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([-_a-z0-9]+)/([-_a-z0-9]+\.[a-z]+)$ thumb.php?alias=$1&file=$2 [NC]

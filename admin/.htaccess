@@ -1,0 +1,23 @@
+# Disable directory browsing
+Options All -Indexes
+
+# Prevent folder listing
+IndexIgnore *
+
+# Use UTF-8 encoding for anything served as "text/html" or "text/plain".
+AddDefaultCharset utf-8
+
+<IfModule mod_rewrite.c>
+
+	# mod_rewrite rules
+	RewriteEngine on
+
+	# The RewriteBase of the system (change if you are using this sytem in a sub-folder).
+	RewriteBase /admin/
+
+	# If the file/dir does not exist, push everything to router.php
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ router.php/$1 [QSA,L]
+
+</IfModule>

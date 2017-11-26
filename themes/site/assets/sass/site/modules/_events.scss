@@ -1,0 +1,155 @@
+
+///////////////////////////////////////
+// Events
+///////////////////////////////////////
+
+.events-dropdown{
+	position: absolute;
+	top:-170px;
+	left:0px;
+	width:100%;
+	z-index:4;
+	@media screen and (max-width : $bp-sm) {
+		top:-50px;
+		position: absolute;
+		.btn2{
+			font-size: 16px;
+			letter-spacing: 0px;
+			padding: 17px 12px;
+		}
+	}
+}
+
+.events-list-wrap{
+	margin-bottom:35px;
+	padding-bottom:35px;
+	border-bottom:2px solid #ccc;
+}
+
+.events-list-title{
+	font-family: $font2;
+	font-weight: bold;
+	font-size:24px;
+	text-transform: uppercase;
+	margin-bottom:4px;
+	color:$c2;
+}
+
+.events-list-date{
+	margin-bottom:10px;
+}
+
+.events-list-date-month{}
+.events-list-date-day{}
+.events-list-date-year{}
+
+.events-list-abridged{
+	margin-bottom:10px;
+	font-size:12px;
+	line-height:22px;
+	color:#797979;
+}
+.events-list-more{}
+
+
+
+/*-----------------------------------
+	Event details
+-----------------------------------*/
+
+.events-details{
+	background-color: $c5;
+	padding-bottom: 50px;
+
+	.events-details-inner{
+		max-width: 850px;
+		margin:0px auto;
+		padding:0px 30px;
+		@media screen and (max-width : $bp-sm) {
+			padding:0px;
+		}
+	}
+
+	.events-details-img{
+		img{
+			max-width: 100%;
+			@include box-shadow(rgba(0,0,0,.35) 0px 0px 30px);
+		}
+	}
+
+	.events-details-title{
+		font-size:66px;
+		line-height: 65px;
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		margin-bottom:20px;
+		@media screen and (max-width : $bp-md) {
+			font-size: 48px;
+			line-height: 48px;
+		}
+		@media screen and (max-width : $bp-sm) {
+			font-size: 38px;
+			line-height: 38px;
+		}
+	}
+
+	.events-details-date{
+		font-size: 25px;
+		line-height: 25px;
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		margin-bottom:40px;
+		@media screen and (max-width : $bp-sm) {
+			font-size: 18px;
+			line-height: 18px;
+		}
+	}
+
+	.events-details-share{
+		width:100%;
+		margin-bottom: 20px;
+		a{
+			display: inline-block;
+			padding: 15px 25px;
+			background-color: $c4;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: $fw-bold;
+			letter-spacing: 1px;
+			cursor: pointer;
+			&:hover{
+				background-color: $c2;
+			}
+		}
+
+	}
+
+	.events-list-details-month{
+
+	}
+	.events-list-details-day{
+
+	}
+	.events-list-details-year{
+
+	}
+	.events-list-details-time{
+
+	}
+
+	.events-details-body{
+		margin-bottom:40px;
+	}
+	.events-details-buttons{
+		margin-bottom:40px;
+		.btn{
+			margin-bottom: 5px;
+		}
+	}
+
+	.events-details-action{
+
+	}
+
+
+}

@@ -1,0 +1,43 @@
+
+/* Size Zones */
+$desktop-full:1330px;
+$desktop-sm:1200px;
+$tablet: 1000px;
+$mobile: 650px;
+
+/*--- COLORS ---*/
+$colors_text: #4e4e4e;
+$colors_text: #4e4e4e;
+$colorhdr: #242424;
+
+
+$highlight:#8dc63f;
+
+
+/*--- FONTS ---*/
+
+@mixin font1(){
+	font-weight: normal;
+	font-family:"open_sansregular", Helvetica, Arial, sans-serif;
+}
+@mixin font1-bold(){
+	font-weight: normal;
+	font-family:"open_sansregular", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+@mixin font2() {
+	font-weight: normal;
+	font-family:"montserratregular", Helvetica, Arial, sans-serif;
+}
+@mixin font2-bold() {
+	font-weight: normal;
+	font-family:"montserratbold", Helvetica, Arial, sans-serif;
+}
+@mixin font3() {
+	font-weight: normal;
+	font-family:"antoniolight", Helvetica, Arial, sans-serif;
+}
+@mixin font3-bold(){	
+	font-weight: normal;
+	font-family:"antoniobold", Helvetica, Arial, sans-serif;
+}

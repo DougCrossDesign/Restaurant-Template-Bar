@@ -1,0 +1,34 @@
+<?php
+	/////////////////////////
+	// Page Meta / Classes
+	/////////////////////////
+	$obj-> body_class = array(
+		"page" => "pg_error",
+		"site_section" => "sct_error",
+		"layout" => ""
+	);
+
+?>
+
+<?php insertInclude("head",$obj); ?>
+<?php insertInclude("header",$obj); ?>
+
+<main id="content-main" class="main-content" role="main">
+	<div class="page-header" style="background-image:url(<? insertImage('bg-subheader-lg.jpg') ?>)">
+		<div class="page-header-text">
+			<div>error</div>
+		</div>
+	</div>
+</main>
+
+<?php insertInclude("footer",$obj); ?>
+
+<!-- Page Specific JS -->
+<script>
+	$(function(){
+
+	});
+</script>
+<!-- /Page Specific JS -->
+
+<?php insertInclude("footerclose"); ?>

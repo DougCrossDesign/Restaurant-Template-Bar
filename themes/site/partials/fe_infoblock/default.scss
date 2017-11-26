@@ -1,0 +1,51 @@
+.home-infoblock{
+	h2{
+		font-family: $font2;
+		font-size: 36px;
+		line-height: 40px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@media screen and (max-width : $bp-sm) {
+			font-size:28px;
+			line-height: 32px;
+		}
+	}
+
+	.btn, .btn2{
+		margin-top: 20px;
+	}
+
+	.home-infoblock-bl{
+		font-family: $font2;
+		font-size: 22px;
+		line-height: 26px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 20px;
+		display: inline-block;
+		position: relative;
+	}
+
+	p{
+		font-size: 14px;
+		line-height: 22px;
+		@media screen and (max-width : $bp-sm) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+
+.home-infoblock-wide{
+	p{
+		font-size: 16px;
+		line-height: 24px;
+		@media screen and (max-width : $bp-sm) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	.btn-circle{
+		margin-top: 20px;
+	}
+}

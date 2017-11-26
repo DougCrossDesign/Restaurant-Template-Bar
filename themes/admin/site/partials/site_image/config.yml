@@ -1,0 +1,15 @@
+name: site_image
+displayname: Single Image
+table: cms_site_partial_image
+enabled: true
+columns:
+  image:
+    type: image
+    length: 10
+    enabled: true
+    required : true
+  alt:
+    type: text
+    length: 255
+    enabled: true
+    required : true

@@ -1,0 +1,146 @@
+
+
+
+
+
+/*-----------------------------------
+	Site Specific Colors
+-----------------------------------*/
+
+
+/*-----------------------------------
+	Site Specific Backgrounds
+-----------------------------------*/
+
+
+
+/*-----------------------------------
+	Dropdown Menu (Generic)
+-----------------------------------*/
+
+.dropdown {
+    position: relative;
+	width:100%;
+
+    .dropbtn {
+	    background-color: $c1;
+	    color: white;
+	    height:50px;
+	    font-size: 20px;
+	    font-weight: $fw-bold;
+	    text-transform: uppercase;
+	    border: none;
+	    text-align: left;
+	    padding-left:20px;
+		padding-right:20px;
+	    cursor: pointer;
+	    width:100%;
+	    @media screen and (max-width : $bp-xsm) {
+			font-size: 16px;
+		}
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 160px;
+	    width:100%;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+		text-align: left;
+	}
+
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #ccc;
+	}
+
+    &:hover .dropdown-content {
+	    display: block;
+	}
+
+	&:hover .dropbtn {
+   		background-color: lighten($c1,10%);
+	}
+}
+
+
+/*-----------------------------------
+	Sitemap
+-----------------------------------*/
+
+.sitemap-nav{
+	> ul > li{
+		font-size:25px;
+		font-weight: $fw-bold;
+		margin-bottom:10px;
+		a{
+			color:#000;
+			&:hover{color:$c1;}
+		}
+		> ul > li{
+			font-weight: $fw-reg;
+			padding-left:10px;
+			a{
+				color:#525252;
+				&:hover{color:$c1;}
+			}
+		}
+	}
+}
+
+
+/*-----------------------------------
+	Pagination
+-----------------------------------*/
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: $c1;
+    color: white;
+    border: 1px solid $c1;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+/*-----------------------------------
+	Defaults
+-----------------------------------*/
+body{
+	font-family: $main-font;
+	color:$main-color;
+	background: $main-bg;
+	background-size: $main-bgs;
+	font-size:100%;
+	/*font smoothing*/-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;/*hrz scroll fix min-width:960px;*/
+}
+
+hr{
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #ccc;
+	margin:20px 0; padding:0;
+}
+
+img{vertical-align:middle;border:none;}

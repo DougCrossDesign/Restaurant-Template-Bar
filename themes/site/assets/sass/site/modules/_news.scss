@@ -1,0 +1,245 @@
+
+///////////////////////////////////////
+// Events
+///////////////////////////////////////
+
+.news-dropdown{
+	position: relative;
+	width:100%;
+	z-index:4;
+	padding: 40px 0px;
+	@media screen and (max-width : $bp-sm) {
+		.btn2{
+			font-size: 16px;
+			letter-spacing: 0px;
+			padding: 17px 12px;
+		}
+	}
+}
+
+.news-list-wrap{
+	margin-bottom:55px;
+	padding-bottom:35px;
+	border-bottom:1.5px solid $c1;
+	.solid-btn{
+		background-color: $c4;
+		color: #fff;
+		width: 40%;
+		height: 35px;
+		margin: 0px;
+		font-family: $font1;
+		font-size: 14px;
+		padding: 0px 40px;
+	}
+}
+
+.news-list-title{
+	font-family: $font1;
+	font-weight: normal;
+	font-size:24px;
+	text-transform: uppercase;
+	color:$c4;
+	line-height: 1.5;
+}
+
+.news-list-date{
+	margin-bottom:10px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.news-list-date-month{}
+.news-list-date-day{}
+.news-list-date-year{}
+
+.news-list-abridged{
+	margin:20px 0px 40px 0px;
+	font-size:12px;
+	line-height:20px;
+	color:$c1;
+	font-weight: 700;
+}
+.news-list-more{}
+
+.pg_news{
+	.dropdown{
+		.dropbtn{
+			background-color: #fff;
+			border: 2px solid $c1;
+			color: $c1;
+			height: 45px;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+	.btn2{
+		background-color: $c1;
+		color: #fff;
+		font-family: $font1;
+		font-size: 16px;
+		font-weight: normal;
+		padding: 2px 20px;
+	}
+	.page-content{
+		padding-bottom: 60px;
+	}
+	@media screen and (max-width: $bp-xsm){
+		.news-dropdown{
+			width: 90%;
+			margin: auto;
+			float: none;
+		}
+		.news-btn{
+			width: 90%;
+			margin: auto;
+			float: none;
+		}
+	}
+}
+
+/*-----------------------------------
+	Event details
+-----------------------------------*/
+
+.news-details{
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	.news-details-inner{
+		max-width: 850px;
+		margin:0px auto;
+		padding:0px 30px;
+		@media screen and (max-width : $bp-sm) {
+			padding:0px;
+			max-width: 700px;
+		}
+		@media screen and (max-width: $bp-xsm){
+			max-width: 500px;
+		}
+	}
+
+	.news-details-img{
+		img{
+			max-width: 100%;
+			@include box-shadow(rgba(0,0,0,.35) 0px 0px 30px);
+		}
+	}
+
+	.news-details-title{
+		font-size:65px;
+		line-height: 65px;
+		font-family: $font1;
+		color: $c4;
+		font-weight: normal;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin-bottom:20px;
+		@media screen and (max-width : $bp-md) {
+			font-size: 48px;
+			line-height: 48px;
+		}
+		@media screen and (max-width : $bp-sm) {
+			font-size: 38px;
+			line-height: 38px;
+		}
+	}
+
+	.news-details-date{
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 0px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		margin-bottom:40px;
+		@media screen and (max-width : $bp-sm) {
+			font-size: 18px;
+			line-height: 18px;
+		}
+	}
+
+	.news-details-buy{
+		.btn{
+			background-color: #fff;
+			border: 2px solid $c1;
+			color: $c1;
+			padding: 3px 60px;
+			font-size: 16px;
+			font-family: $font1;
+			font-weight: normal;
+		}
+	}
+
+	.news-details-share{
+		width:100%;
+		margin-bottom: 20px;
+		a{
+			display: inline-block;
+			padding: 15px 25px;
+			background-color: $c4;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: $fw-bold;
+			letter-spacing: 1px;
+			cursor: pointer;
+			&:hover{
+				background-color: $c2;
+			}
+		}
+
+	}
+
+	.news-details-body{
+		width: 100%;
+		img{
+			width: 300px;
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 5px;
+		}
+		.news-detail-content{
+			margin: 20px 0px;
+		}
+
+	}
+	.news-list-details-month{
+
+	}
+	.news-list-details-day{
+
+	}
+	.news-list-details-year{
+
+	}
+	.news-list-details-time{
+
+	}
+
+	.news-details-body{
+		margin-bottom:40px;
+	}
+	.news-details-buttons{
+		margin-bottom:80px;
+		.btn{
+			padding: 3px 20px;
+			margin-bottom: 5px;
+			background-color: #fff;
+			border: 2px solid $c1;
+			color: $c1;
+			font-size: 16px;
+			font-family: $font1;
+			font-weight: normal;
+		}
+	}
+
+	.news-details-vid-wrap{
+		margin-bottom: 40px;
+	}
+
+	.news-details-action{
+
+	}
+
+
+}

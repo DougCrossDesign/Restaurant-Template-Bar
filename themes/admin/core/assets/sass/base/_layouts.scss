@@ -1,0 +1,155 @@
+
+/*!--- LAYOUT ---*/
+
+
+/*---------------------------------------
+	Page Layouts
+---------------------------------------*/
+
+.wrap{max-width:1390px; margin:0 auto; padding:0 30px;}
+.bg-default{background-image: url(images/site_bg.jpg); background-repeat: repeat-x;  }
+.bg-subs{background-image: url(images/subs_bg.jpg); background-repeat: repeat-x;  }
+.overflow-hide{overflow: hidden;}
+
+.layout-wrap{position: relative;}
+.main-col{background-color: #fff; width: 75%; float:left;position: relative;}
+.side-col{background-color: #fff; width: 25%; float:right; background-image: url(images/sidebar-bg.jpg); background-position: left top; background-repeat: repeat-y;}
+
+
+
+/*---  < Desktop Large  ---*/
+@media screen and (max-width : $desktop-full) {
+	
+}
+
+
+/*---  < Desktop Small  ---*/
+@media screen and (max-width : $desktop-sm) {
+	
+}
+
+/*---  < Tablet  ---*/
+@media screen and (max-width : $tablet) {
+	
+}
+
+
+/*---  Mobile-  ---*/
+@media screen and (max-width : $mobile) {
+	
+}
+
+
+
+
+
+
+/*---------------------------------------
+	Columns
+---------------------------------------*/
+
+/*
+	<div class="col-wrap gutter10">    -- col-wrap and gutter / padding
+		<li class="col col1-2"></li>   -- col class and col splitter
+		<li class="col col1-2"></li>
+	</div>
+*/
+
+/* Base No Gutter Cols */
+.col-wrap{clear:both;}
+	.col3-4{width:75%;float:left;}
+	.col2-3{width:66.6%;float:left}
+	.col1-2{width:50%;float:left}
+	.col1-3{width:33.3%;float:left}
+	.col1-4{width:25%;float:left}
+	.col1-5{width:20%;float:left}
+
+.col-inline{clear:both;}
+	.col-inline .col{float:none; display: inline-block;}
+
+/* Fixed width gutters */
+.form-col{margin-left:-10px;margin-right:-10px;clear: both;}
+	.form-col .col{padding: 0 10px 0px 10px;}
+	.form-col .colm{margin: 0 10px 0px 10px;}
+
+.gutter5{margin-left:-5px;margin-right:-5px;clear: both;}
+	.gutter5 .col{padding: 0 5px 20px 5px;}
+	.gutter5 .colm{margin: 0 5px 20px 5px;}
+
+.gutter10{margin-left:-10px;margin-right:-10px;clear: both;}
+	.gutter10 .col{padding: 0 10px 20px 10px;}
+	.gutter10 .colm{margin: 0 10px 20px 10px;}
+
+.gutter20{margin-left:-20px;margin-right:-20px;clear: both;}
+	.gutter20 .col{padding: 0 20px 20px 20px;}
+	.gutter20 .colm{margin: 0 20px 20px 20px;}
+
+.gutter30{margin-left:-30px;margin-right:-30px;clear: both;}
+	.gutter30 .col{padding: 0 30px 20px 30px;}
+	.gutter30 .colm{margin: 0 30px 20px 30px;}
+
+.gutter40{margin-left:-40px;margin-right:-40px;clear: both;}
+	.gutter40 .col{padding: 0 40px 20px 40px;}
+	.gutter40 .colm{margin: 0 40px 20px 40px;}
+
+
+/* Percentage width gutters */
+.col-perc1{margin-left:-1%;margin-right:1%;clear: both;}
+	.col-perc1 .col {padding: 0 1% 20px 1%;}
+	.col-perc1 .colm {margin: 0 1% 20px 1%;}
+
+.col-perc2{margin-left:-2%;margin-right:2%;clear: both;}
+	.col-perc2 .col {padding: 0 2% 20px 2%;}
+	.col-perc2 .colm {margin: 0 2% 20px 2%;}
+
+.col-perc3{margin-left:-3%;margin-right:3%;clear: both;}
+	.col-perc3 .col {padding: 0 3% 20px 3%;}
+	.col-perc3 .colm {margin: 0 3% 20px 3%;}
+
+.col-perc4{margin-left:-4%;margin-right:4%;clear: both;}
+	.col-perc4 .col {padding: 0 4% 20px 4%;}
+	.col-perc4 .colm {margin: 0 4% 20px 4%;}
+
+.col-perc5{margin-left:-5%;margin-right:5%;clear: both;}
+	.col-perc4 .col {padding: 0 5% 20px 5%;}
+	.col-perc4 .colm {margin: 0 5% 20px 5%;}
+
+
+
+
+
+/*---  < Tablet  ---*/
+@media screen and (max-width : $tablet) {
+	.form-col{margin-left:0px;margin-right:0px;clear: both;}
+		.form-col .col{padding: 0 0px 0px 0px; width:100%; margin-bottom:5px;}		
+}
+
+
+
+/*---------------------------------------
+	Entry Content
+---------------------------------------*/
+
+
+.entry-content h2{margin:0 0 20px 0;}
+.entry-content h3{margin:0 0 12px 0;}
+.entry-content p, .entry-content ul, .entry-content ol{margin:0 0 20px 0;}
+.entry-content li{margin:0 0 7px 25px; list-style-type:disc;}
+.entry-content ol li{list-style-type:decimal;}
+.entry-content img{margin:0 15px 5px 0; max-width:100%; height:auto;}
+.entry-content strong {}
+
+#content-main{display: block;}
+.content-block{display: block; padding:40px 0;}
+
+
+/*---------------------
+	Admin tabs
+	---------------------*/
+.tabgroup { border: solid 1px gray; margin-bottom: 20px; }
+.tabheader { background: gray; width: 100%; margin-bottom: 20px; }
+.tabheader > a.active { background: #F4F4F4; color: gray; }
+.tabheader > a { display: inline-block; padding: 10px 20px; background: gray; color: #F4F4F4; cursor: pointer; margin-right: 4px; }
+.tabcontents > div.active { display: block; }
+.tabcontents > div { display: none; padding: 10px 20px; }
+

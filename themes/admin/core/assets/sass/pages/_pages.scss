@@ -1,0 +1,81 @@
+/***********************************************/
+/** General
+/***********************************************/
+
+#content-main{padding-left:88px; min-height:1200px; @include transition(all 0.2s ease-in-out); background-color: #f4f4f4; max-width:95%; height:100%; position: relative; }
+	.content-active{padding-left:317px !important;}
+	.content-wrap{padding:0px 50px;}
+
+	.datagrid{
+		background-color: #fff;	width:100%;	@include border-top-radius(6px); overflow:hidden; font-size:12px;
+		tr{background-color:#f9f9f9;}		
+		th, td {border-bottom:1px solid #E0E0E0; padding: 12px 15px; text-align: left;} 
+		th {background:#2b2b2a; color:#fff; @include background-image(linear-gradient(#40403f, #272726));}
+		tbody a{display:inline-block; margin-bottom:2px; @include border-radius(5px); padding:5px 10px; font-size:12px; background-color:#E2E2E2; margin-right:5px;  @include transition(all 0.2s ease-in-out);}
+		tbody a:hover{background-color: #8dc63f;}
+	}
+
+	.tabs-nav {background: gray;  color: white; padding: 6px 10px; display: inline-block;   cursor: pointer; @include border-radius(10px); margin-bottom:10px; font-size:12px;}
+	.tabs-nav.active { background: #3F3F3E; color: #8dc63f;}
+
+    .admin-paginator{border:2px solid #8dc63f; padding:10px; margin-bottom:20px; @include border-radius(15px); display: inline-block;}
+    	.admin-paginator li{display: inline-block; padding:0px 10px;}
+
+	.login-box{padding:40px; max-width:400px; background-color: #fff; border-radius: 20px; border: 1px solid #ccc; margin:auto; margin-top:100px;}
+
+	.section-gradient{
+		@include background-image(linear-gradient(#fefefe, #e1e1e1)); border-bottom:1px solid #d5d5d5; padding:50px 0px;
+	}
+
+	.section-header{background:#2b2b2a; color:#fff; @include background-image(linear-gradient(#40403f, #272726)); padding:12px 15px; @include border-top-radius(6px);}
+		.section-header span{display: inline-block; vertical-align: middle; padding-right:10px;}
+	.section-body{padding:15px; background-color:#fff;}
+
+	.top-bar{background-color: #ebebeb; border-top:1px solid #d5d5d5; border-bottom:1px solid #d5d5d5; }
+	.top-icons{background-color: #e0e0e0; float:left; line-height: 36px; padding:0px 10px; }
+	.top-desc{line-height: 36px;display: inline-block; font-size:13px; color:#373737; padding-left:10px;}
+
+.admin-section{border:3px solid #ccc; padding:30px; margin-bottom:40px; @include border-radius(10px)}
+	.admin-section-t2{border:2px solid #ccc; padding:20px; margin-bottom:40px; @include border-radius(10px)}
+	.admin-section-t3{border:1px solid #dddddd; padding:20px; margin-bottom:40px; @include border-radius(10px)}
+
+	.admin-section a{display:inline-block; padding:3px; background-color: #ccc; color:#000; min-width:100px; @include transition(all 0.2s ease-in-out); text-align: center; margin:0px 5px 5px 0px; @include border-radius(5px);}
+	.admin-section a:hover{background-color: #8dc63f;}
+
+	.admin-partial{background-color: #E4E4E4; border: 2px solid #ccc;padding:15px; @include border-radius(15px); margin-bottom:20px;}
+		.admin-partial-title{width:60%; float:left; font-size:24px; font-weight: 600;}
+		.admin-partial-controls{text-align: right; width:40%;float:right;}
+		.order-dropdown{display:inline-block;}
+		.order-dropdown-select{width:auto; height:auto; min-height: inherit;}
+		.admin-partial-super{@include border-bottom-radius(15px); background-color:#ddd; padding: 5px 5px 1px 5px;    width: 80%;    margin: -20px auto 20px auto;}
+		.admin-partial-super-select{height:auto; min-height: inherit;}
+
+.admin-header{margin-bottom:20px;}
+.input-limit{background-color:#909090; @include border-bottom-radius(10px); font-size:11px; color:#D0D0D0; padding:5px 10px; margin-bottom:20px;}
+
+fieldset { padding: 20px; border: 1px solid #ccc; @include border-radius(10px);}
+legend { padding: 0.2em 0.5em; background-color:#fff; border:1px solid #ccc; text-align:left; @include border-radius(5px); }
+
+.admin-title{@include border-radius(5px); background-color:#30302F; padding:10px; margin-bottom:20px;}
+.admin-image-show{background-color:#ccc; padding:10px; text-align: center;}
+
+
+/*---  < Desktop Full  ---*/
+@media screen and (max-width : $desktop-full) {
+	
+}
+
+/*---  < Desktop Small  ---*/
+@media screen and (max-width : $desktop-sm) {
+	#content-main{max-width:95%; }
+}
+
+/*---  < Tablet  ---*/
+@media screen and (max-width : $tablet) {
+	
+}
+
+/*---  < Mobile ---*/
+@media screen and (max-width : $mobile) {
+	
+}

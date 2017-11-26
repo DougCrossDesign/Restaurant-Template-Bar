@@ -1,0 +1,375 @@
+/*----------------------------------------------------------------------
+	Float Grid Spacing
+----------------------------------------------------------------------*/
+$col-sp1: 				.5%;
+$col-sp2: 				1%;
+$col-sp3: 				1.5%;
+$col-sp4: 				2%;
+$col-sp5: 				3%;
+
+$col-pad-xsm:			5px;
+$col-pad-sm:			10px;
+$col-pad-md:			20px;
+$col-pad-lg:			30px;
+$col-pad-xlg:			40px;
+
+$col-vsp-xsm:			5px;
+$col-vsp-sm:			10px;
+$col-vsp-md:			20px;
+$col-vsp-lg:			40px;
+$col-vsp-xlg:			50px;
+
+$col-auto-vpace:		20px;
+
+
+/*----------------------------------------------------------------------
+	Grid Breaks
+----------------------------------------------------------------------*/
+
+$auto-54321-br1:		$bp-lg;
+$auto-54321-br2:		$bp-md;
+$auto-54321-br3:		$bp-sm;
+$auto-54321-br4:		$bp-xsm;
+
+$auto-4321-br1:			$bp-md;
+$auto-4321-br2:			$bp-sm;
+$auto-4321-br3:			$bp-xsm;
+
+$auto-42-br1:			$bp-sm;
+$auto-32-br1:			$bp-sm;
+
+$auto-321-br1:			$bp-md;
+$auto-321-br2:			$bp-sm;
+
+$auto-21-br1:			$bp-sm;
+
+
+/*---------------------------------------
+	Traditional AYC Col System
+---------------------------------------*/
+
+// Base Columns
+.col-space0 {
+	clear:both;
+	.col{width: 100%; float:left;}
+	.col1-2{
+		width: 50%;
+		float:left;
+
+	}
+	.col1-3{width: 33.3%; float:left; }
+	.col2-3{width: 66.6%; float:left; }
+	.col1-4{width: 25%; float:left; }
+	.col3-4{width: 75%; float:left; }
+	.col1-5{width: 20%; float:left; }
+	.col2-5{width: 40%; float:left; }
+	.col3-5{width: 60%; float:left; }
+	.col4-5{width: 80%; float:left; }
+}
+
+// Columns Horizontal Spacing and Calcs
+$col-space: $col-sp1, $col-sp2, $col-sp3, $col-sp4, $col-sp5;
+@for $i from 1 through length($col-space) {
+	//nth($col-space, $i);
+	.col-space#{$i} {
+		clear:both;
+		margin-left: nth($col-space, $i) * -1;
+		margin-right: nth($col-space, $i) * -1;
+		.col{
+			width: 100% - nth($col-space, $i) * 2;
+			margin-left:nth($col-space, $i);
+			margin-right:nth($col-space, $i);
+			float:left;
+		}
+		.col1-2{
+			width: 50% - nth($col-space, $i) * 2;
+			float:left;
+		}
+		.col1-3{
+			width: 33.3% - nth($col-space, $i) * 2;
+			float:left;
+		}
+		.col2-3{
+			width: 66.6% - nth($col-space, $i) * 2;
+			float:left;
+		}
+		.col1-4{
+			width: 25% - nth($col-space, $i) * 2;
+			float:left;
+		}
+		.col3-4{
+			width: 75% - nth($col-space, $i) * 2;
+			float:left;
+		}
+		.col1-5{
+			width: 20% - nth($col-space, $i) * 2;
+			float:left;
+		}
+		.col2-5{
+			width: 40% - nth($col-space, $i) * 2;
+			float:left;
+		}
+		.col3-5{
+			width: 60% - nth($col-space, $i) * 2;
+			float:left;
+		}
+		.col4-5{
+			width: 80% - nth($col-space, $i) * 2;
+			float:left;
+		}
+	}
+}
+
+
+//Auto Responsive For Equal Width Rows (5-4-3-2-1)
+@for $i from 1 through length($col-space) {
+	.auto-5-4-3-2-1.col-space#{$i} {
+		.col{
+			width:20% - nth($col-space, $i) * 2;
+			float: left;
+			@media screen and (max-width : $auto-54321-br1) {
+				width:25% - nth($col-space, $i) * 2;
+			}
+			@media screen and (max-width : $auto-54321-br2) {
+				width:33.333% - nth($col-space, $i) * 2;
+			}
+			@media screen and (max-width : $auto-54321-br3) {
+				width:50% - nth($col-space, $i) * 2;
+			}
+			@media screen and (max-width : $auto-54321-br4) {
+				width:100% - nth($col-space, $i) * 2;
+			}
+		}
+	}
+}
+
+//Auto Responsive For Equal Width Rows (4-3-2-1)
+@for $i from 1 through length($col-space) {
+	.auto-4-3-2-1.col-space#{$i} {
+		.col{
+			width:25% - nth($col-space, $i) * 2;
+			float: left;
+			@media screen and (max-width : $auto-4321-br1) {
+				width:33.333% - nth($col-space, $i) * 2;
+			}
+			@media screen and (max-width : $auto-4321-br2) {
+				width:50% - nth($col-space, $i) * 2;
+			}
+			@media screen and (max-width : $auto-4321-br3) {
+				width:100% - nth($col-space, $i) * 2;
+			}
+		}
+	}
+}
+
+//Auto Responsive For Equal Width Rows (4-2)
+@for $i from 1 through length($col-space) {
+	.auto-4-2.col-space#{$i} {
+		.col{
+			width:25% - nth($col-space, $i) * 2;
+			float: left;
+			@media screen and (max-width : $auto-42-br1) {
+				width:50% - nth($col-space, $i) * 2;
+			}
+		}
+	}
+}
+
+//Auto Responsive For Equal Width Rows (3-2)
+@for $i from 1 through length($col-space) {
+	.auto-3-2.col-space#{$i} {
+		.col{
+			width:33% - nth($col-space, $i) * 2;
+			float: left;
+			@media screen and (max-width : $auto-32-br1) {
+				width:50% - nth($col-space, $i) * 2;
+			}
+		}
+	}
+}
+
+
+//Auto Responsive For Equal Width Rows (3-2-1)
+@for $i from 1 through length($col-space) {
+	.auto-3-2-1.col-space#{$i} {
+		.col{
+			width:33.333% - nth($col-space, $i) * 2;
+			float: left;
+			@media screen and (max-width : $auto-321-br2) {
+				width:50% - nth($col-space, $i) * 2;
+			}
+			@media screen and (max-width : $auto-4321-br3) {
+				width:100% - nth($col-space, $i) * 2;
+			}
+		}
+	}
+}
+
+//Auto Responsive For Equal Width Rows (2-1)
+@for $i from 1 through length($col-space) {
+	.auto-2-1.col-space#{$i} {
+		.col{
+			width: 50% - nth($col-space, $i) * 2;
+			// float:left;
+			@media screen and (max-width : $auto-21-br1) {
+					width:100% - nth($col-space, $i) * 2;
+			}
+		}
+	}
+}
+
+
+//Col Vertical Spacing
+.col-vsp-xsm{
+	.col{
+		margin-bottom: $col-vsp-xsm;
+	}
+}
+
+.col-vsp-sm{
+	.col{
+		margin-bottom: $col-vsp-sm;
+	}
+}
+
+.col-vsp-md{
+	.col{
+		margin-bottom: $col-vsp-md;
+	}
+}
+
+.col-vsp-lg{
+	.col{
+		margin-bottom: $col-vsp-lg;
+	}
+}
+
+.col-vsp-xlg{
+	.col{
+		margin-bottom: $col-vsp-xlg;
+	}
+}
+
+
+
+//Col Padding
+.col-pad-xsm{
+	.col{
+		padding:$col-pad-xsm;
+	}
+}
+
+.col-pad-sm{
+	.col{
+		padding:$col-pad-sm;
+	}
+}
+
+.col-pad-md{
+	.col{
+		padding:$col-pad-md;
+	}
+}
+
+.col-pad-lg{
+	.col{
+		padding:$col-pad-lg;
+	}
+}
+
+.col-pad-xlg{
+	.col{
+		padding:$col-pad-xlg;
+	}
+}
+
+
+//Simple Auto Breaks On Size
+@media screen and (max-width : $bp-xsm) {
+	.col-auto-xsm{
+		margin-left: inherit;
+		margin-right: inherit;
+		.col{
+			width:inherit;
+			float: inherit;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.col-auto-xsm.col-auto-vspace{
+		.col{
+			margin-bottom: $col-auto-vpace;
+		}
+	}
+}
+
+@media screen and (max-width : $bp-sm) {
+	.col-auto-sm{
+		margin-left: inherit;
+		margin-right: inherit;
+		.col{
+			width:inherit;
+			float: inherit;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+@media screen and (max-width : $bp-md) {
+	.col-auto-md{
+		margin-left: inherit;
+		margin-right: inherit;
+		.col{
+			width:inherit;
+			float: inherit;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.col-auto-md.col-auto-vspace{
+		.col{
+			margin-bottom: $col-auto-vpace;
+		}
+	}
+}
+
+@media screen and (max-width : $bp-lg) {
+	.col-auto-lg{
+		margin-left: inherit;
+		margin-right: inherit;
+		.col{
+			width:inherit;
+			float: inherit;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.col-auto-lg.col-auto-vspace{
+		.col{
+			margin-bottom: $col-auto-vpace;
+		}
+	}
+}
+
+@media screen and (max-width : $bp-xlg) {
+	.col-auto-xlg{
+		.col{
+			width:inherit;
+			float: inherit;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.col-auto-xlg.col-auto-vspace{
+		.col{
+			margin-bottom: $col-auto-vpace;
+		}
+	}
+}
+
+.col-example{
+	.col{
+		background-color: #dedede;
+	}
+}

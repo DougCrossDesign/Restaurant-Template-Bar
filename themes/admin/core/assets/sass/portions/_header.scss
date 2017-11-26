@@ -1,0 +1,29 @@
+
+.header{height:100%; }
+.side-bar{background-color:#474746;  background-image: url(images/menu-bg.jpg); width:50px; position: fixed; top:0px; bottom:0; left:0; z-index:11;}
+.nav-wrap{background-color: #30302f;  background-image: url(images/sidebar-bg.jpg); background-position: top;  background-repeat: no-repeat; z-index:10; width:266px; height:100%; position: absolute; top:0px; bottom:0;  left:-215px; @include transition(all 0.2s ease-in-out);}
+	.nav-active {left:50px;}
+	.nav-wrap #logo{padding:0px 20px; line-height:219px;}
+	.side-shadow{position: absolute;left:0; top:0; bottom:0; width:18px;  background-image: url(images/sidebar-shadow.png); }
+	.side-shadow2{position: absolute;right:-18px; top:0; bottom:0; width:18px;  background-image: url(images/sidebar-shadow2.png); }
+	.side-shadow3{position: absolute;right:-18px; top:0; bottom:0; width:18px;  background-image: url(images/sidebar-shadow.png); @include opacity(.6); }
+
+	.nav-hamburger{position: absolute; top:230px; left:15px; font-size:18px; color:#fff;}
+	.nav-open, .nav-close {color:#fff;}
+	.nav-open:hover, .nav-close:hover {color:$highlight;}
+	
+	#nav-main li a{color:#fff;display: block; padding:15px 20px 15px 20px; border-top:1px solid #474745; border-bottom:1px solid #191918; @include transition(all 0.2s ease-in-out);}
+		#nav-main li a:hover{color:$highlight; background-color:#222221;}
+	#nav-main li a span{display: inline-block; vertical-align: middle; float:right; font-size:18px; padding:0px 15px 0px 0px; text-shadow: 2px 2px #000;}
+	#nav-main li a div{display: inline-block; vertical-align: middle}
+
+#nav-main li ol a{background-color: #1D1D1D; padding:9px 20px 9px 24px; font-size:12px; border-bottom: 1px solid #000000; border-top: 1px solid #292929; }
+	#nav-main li ol a span{ font-size:14px; padding:0px 5px 0px 0px; text-shadow: 2px 2px #000; color:#616161; font-size:12px;  }
+	#nav-main li ol a div{font-size:12px; }
+#nav-main li ol a:hover, #nav-main li ol li.current a{background-color: #000;}
+
+
+#nav-main li.nav-menu.nav-active-sub span.aycicon-up_arrow { display: inline-block; }
+#nav-main li.nav-menu.nav-active-sub span.aycicon-down_arrow { display: none; }
+#nav-main li.nav-menu span.aycicon-up_arrow { display: none; }
+#nav-main li.nav-menu span.aycicon-down_arrow { display: inline-block; }

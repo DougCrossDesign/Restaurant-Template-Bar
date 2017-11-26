@@ -1,0 +1,106 @@
+.social-tabs {
+
+	max-width: 450px;
+	color:#fff;
+	margin:auto;
+
+	.tabs-nav {
+		margin-bottom: 20px;
+	}
+
+	.tabs-nav a{
+		display:block;
+		width: inherit;
+		height:inherit;
+		text-align: center;
+		line-height: inherit;
+		color:#fff;
+		font-weight:bold;
+		background:transparent;
+		cursor:pointer;
+		font-size: 25px;
+		padding: 5px 9px 5px 10px;
+		border:none;
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	.tabs-nav a:hover{
+		background:inherit;
+	}
+
+	.tabs-nav .current a{
+		color:$c1;
+		border-style: solid;
+		border-color: $c1;
+		border-width: 5px;
+		border-radius: 50%;
+		background:inherit;
+	}
+
+	.tab-sct{
+		margin:0px;
+	}
+
+	.twitter-feed{
+		text-align: center;
+		font-size:16px;
+		line-height: 23px;
+		.twitter-feed-post{
+			font-size: 16px;
+			a{
+				color:#fff;
+				&:hover{
+					color:$c2;
+				}
+			}
+		}
+		.twitter-feed-date{
+			padding:5px;
+			font-size: 12px;
+		}
+		.twitter-account{
+			font-size:18px;
+			color:#fff;
+			margin-bottom:20px;
+			display: block;
+		}
+	}
+
+	.facebook-feed{
+		text-align: center;
+		font-size:16px;
+		line-height: 23px;
+		.fbwidget_message{
+			font-size: 16px;
+			a{
+				color:#fff;
+				&:hover{
+					color:$c2;
+				}
+			}
+			margin: 10px auto;
+			width: 100%;
+		}
+		.fbwidget_link{
+			display: none;
+		}
+		.fbwidget_date{
+			padding:2px 0px 0px 0px;
+			font-size: 12px;
+			font-weight: 800;
+		}
+		.fbwidget_daysago{
+		display:none;
+		}
+		.facebook-account{
+			// font-size:18px;
+			// color:#fff;
+			// margin-bottom:20px;
+			display: none;
+		}
+	}
+
+	.fbwidget_image,.fbwidget_likes,.fbwidget_shares{display: none;}
+
+
+}

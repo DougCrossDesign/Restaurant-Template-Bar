@@ -1,0 +1,85 @@
+# Location Accordion partial
+# A series of subsections that contain tinymce data
+# This stores an address and uses the Injector to fetch google map LAT and LONG data
+name: site_locationaccordion
+table: cms_site_partial_locationaccordion
+enabled: true
+columns:
+  title:
+    type: text
+    length: 255
+    enabled: enabled     #default: true
+    required : false   #default: true
+meta:
+  name: item
+  table: cms_site_partial_locationaccordion_items
+  order:
+    column: displayorder
+    order: asc
+    manageable: true
+    display: title
+  columns:
+    image:
+      type: image
+      length: 10
+      enabled: true
+      required: true
+    title:
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    content:
+      type: textarea
+      length: 255
+      enabled: false
+      required: false
+    address_street:
+      label: Address - Street
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    address_city:
+      label: Address - City
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    address_state:
+      label: Address - State
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    address_zip:
+      label: Address - Zip
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    phone:
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    website:
+      type: text
+      length: 2048
+      enabled: true
+      required: false
+    lat:
+      type: hidden
+      length: 10
+      enabled: true
+      required: false
+    lng:
+      type: hidden
+      length: 10
+      enabled: true
+      required: false
+    displayorder:
+      type: hidden
+      length: 11
+      enabled: true
+      required: false

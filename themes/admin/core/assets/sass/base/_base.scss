@@ -1,0 +1,105 @@
+
+/*---------------------------------------
+	Base
+---------------------------------------*/
+body{font-size:100%;@include font1(); position:relative; background: #e9e9e9; background-image: url(images/body-bg.jpg); background-repeat: repeat-x; background-position: top;  color:$colors_text;/*font smoothing*/-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;/*hrz scroll fix min-width:960px;*/}
+h1, .h1{font-size:30px;line-height:30px;}
+h2, .h2{font-size:24px;line-height:24px;}
+h3{font-size:18px;}
+h4{font-size:16px;}
+p, li, dt, dd{font-size:16px;}
+p{line-height:28px;}
+li{list-style:none;} 
+a{color:$highlight;text-decoration:none;}
+a:hover{color:#000;}
+strong{@include font1-bold();}
+big{font-size:120%;}
+small{font-size:80%;}
+img{vertical-align:middle;border:none;}
+hr{display:block; height:1px; border:0; border-top:1px solid #e0ded9; margin:15px 0; padding:0;}
+::-moz-selection{background:#b3d4fc;text-shadow:none;} 
+::selection{background:#b3d4fc;text-shadow:none;}
+.test{}
+
+/*---------------------------------------
+	Forms
+---------------------------------------*/
+fieldset{border:0; margin:0; padding:0;} 
+label{display:block; font-weight:bold; font-size:12px;  background-color: #E2E2E2; padding: 5px 10px; display: inline-block; min-width: 25%; @include border-top-radius(10px);}
+select, input, textarea{display:block; width:100%; min-height:30px; padding:10px 15px; margin:0 0 0px; color:#555; font-size:14px; @include font1(); background:#fff; border:1px solid #e0ded9; border-radius:0px; /* box */-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+input, textarea{-webkit-appearance:none;}
+input:focus, textarea:focus{border:1px solid #ccc; }
+textarea{height:150px;}
+input[type="submit"]{cursor:pointer;}
+
+.mce-tinymce{margin-bottom:20px !important;}
+
+.form-pad{padding:10px 0px;}
+
+.submit{background-color: #ccc; line-height: 34px; color:#fff; text-align: center; @include border-radius(15px); display: inline-block; text-transform: uppercase; @include font2-bold();@include transition(all 0.2s ease-in-out);padding:0px 30px; border:none; cursor: pointer;}
+	.submit:hover{background-color: #8dc63f;color:#fff;}
+
+.chbx, .radio{display:block; margin:0 0 20px 0; padding:10px 5px 10px 40px; cursor:pointer; font-weight:normal; @include font1(); @include border-radius(15px)}
+	.chbx input, .radio input{display:inline-block; min-height: initial; width:auto; height:auto; margin:0 5px 0 -20px; padding:0; background:none; cursor:pointer; vertical-align:baseline; border:none;}
+	.radio input{-webkit-appearance:radio;}
+	.chbx input{-webkit-appearance:checkbox;}
+	.inline-chbx .chbx, .inline-radio .radio{display:inline-block; margin:0 10px 4px 0;}
+
+
+/*---  700-  ---*/
+@media screen and (max-width : 700px) {
+	/* Field Callout */
+	.field-callout, form.col-wrap .field-callout{margin:0 -20px;}
+}
+
+/*---  550-  ---*/
+@media screen and (max-width : $mobile) {
+	/* Form Cols */
+	form.col-wrap{margin:0;}
+		form.col-wrap li{margin:0 0 25px 0; clear:both;}
+		form.col-wrap .lbl-mini{margin:0;}
+			form.col-wrap .field-col{width:auto; float: none; margin:0 0 20px 0;}
+			form.col-wrap .field-col.lbl-hint{margin:0;}
+	/* Form Inline */
+	form .inline{}
+		.inline label{display: block; width:auto; padding:0; margin:0 0 5px 0; text-align: left;}
+		.inline .chbx-wrap, .inline .radio-wrap{display:block; width:auto;}
+}
+
+
+
+/*---------------------------------------
+	Advanced
+---------------------------------------*/
+
+.vcode-area{position:relative; padding-left:120px;}
+	.vcode-img{display:block; width:auto; position:absolute; left:0; top:0;}
+	.vcode{width:100%; height:50px; font-size:30px; text-align:center;}
+.inline-fields li{margin-left:30%;}
+	.inline-fields .inline{margin-left:0;}
+form .side-label{padding:0 !important; margin:0 0 25px 0;}
+	.side-label label{display:inline-block; width:39%; padding:0 4%; text-align: right; margin-bottom:0; vertical-align:top;}
+	.side-label input{display:inline-block; width:60%; margin-bottom:0; text-align: left; vertical-align: top;}
+	.side-label .chbx-wrap, .side-label .radio-wrap{width:60%; display:inline-block; padding:0;}
+		.side-label .chbx, .side-label .radio{width:auto; padding:0; margin:0 20px 12px 0; text-align: left; text-transform: none; font-size:13px;}
+			.side-label .chbx input, .side-label .radio input{width:auto; height:auto; margin:-2px 5px 0 0; vertical-align: middle;}
+		.side-label .lbl-block .chbx, .side-label .lbl-block .radio{display: block; margin:0 0 7px 0;}
+.inline-submit input{display:block;float:left;vertical-align:top;width:77%;margin:0 2% 0 0;}
+.inline-submit .submit{height:55px;width:20%;padding:0;margin:0;font-size:20px;border-radius:0;}
+.field-callout{padding:10px 0;background:#fff;border-top:1px solid #333;border-bottom:1px solid #333;}
+.req{color:rgb(224, 53, 53);}
+::-webkit-input-placeholder{color:#555;} ::-moz-placeholder{color:#555;} :-ms-input-placeholder{color:#555;}
+
+.errmsg{background-color:#FFF5F5;border:1px dotted #CC0000;margin:10px 0 10px 0;}
+.errmsg div{padding:10px 0 10px 0;}
+.errmsg ul{margin-top:0;margin-bottom:0;}
+.errmsg li{list-style:disc;text-align:left !important;margin:0 0 5px 25px !important;}
+
+
+/*---------------------------------------
+	SITE DEBUG
+---------------------------------------*/ 
+
+.debug-file-page {background-color: blue; color:#fff; padding:5px; font-size:10px;}
+.debug-file-partial {background-color:red; color:#fff; padding:5px; font-size:10px}
+.debug-file-include {background-color:green; color:#fff; padding:5px; font-size:10px}

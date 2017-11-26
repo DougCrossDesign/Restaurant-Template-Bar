@@ -1,0 +1,33 @@
+
+/*!--- FOOTER ---*/
+.footer .rel{position: relative;}
+.footer-sponsors{background-color: #151515; min-height: 217px;}
+.footer-brands-wrap{background-color: #1d1d1d; text-align: center;}
+.footer-brands-logos{padding:45px 0px 89px 0px; }
+.footer-brands-logos li{display:inline-block; padding:0px 10px }
+.footer-brands-logos li a{@include transition(all 0.2s ease-in-out);@include opacity(0.3);}
+.footer-brands-logos li a:hover{@include opacity(1);}
+
+.footer-social{ position: absolute; bottom:20px; left:0;}
+	.footer-social li{vertical-align: bottom; display: inline-block; padding:0px 20px 0px 0px;}
+	.footer-social li a{vertical-align: bottom; font-size:22px;color:#646464; @include transition(all 0.2s ease-in-out);}
+	.footer-social li a:hover{color:#fff; }
+	.footer-ryan-logo{@include opacity(0.3);}
+	.footer-ryan-logo:hover{@include opacity(1);}
+
+.footer-nav{background-color: #272727; font-size:11px; color:#636363;padding:10px 0px;}
+.footer{background-color: #e5e5e5;}	
+
+#nav-footer ul{float:right;}
+#nav-footer li{display: inline-block; font-size:11px;}
+#nav-footer a{color:#636363; border-right: 1px solid #383838; padding:1px 5px; }
+#nav-footer a:hover{color:#fff;}
+
+#nav-footer li:last-child a{border:none;}
+
+.nav-footer-wrap {float:right;}
+
+/*---  960-  ---*/
+@media screen and (max-width : 960px) {
+	
+}

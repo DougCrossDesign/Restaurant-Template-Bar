@@ -1,0 +1,20 @@
+name: core_adminshortcut
+displayname: Admin Shortcut
+table: cms_core_partial_adminshortcut
+enabled: true
+columns:
+  link:
+    type: text
+    length: 4096
+    enabled: true
+    required : true
+  label:
+    type: text
+    length: 100
+    enabled: true
+    required : false
+  newwindow:
+    type: checkbox
+    length: 1
+    enabled: true
+    required : false

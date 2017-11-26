@@ -1,0 +1,225 @@
+ 
+
+
+/* Icon Font AYC Base */
+@font-face {
+	font-family: 'aycbase';
+	src:url('fonts/aycbase.eot?rjs24n');
+	src:url('fonts/aycbase.eot?rjs24n#iefix') format('embedded-opentype'),
+		url('fonts/aycbase.ttf?rjs24n') format('truetype'),
+		url('fonts/aycbase.woff?rjs24n') format('woff'),
+		url('fonts/aycbase.svg?rjs24n#aycbase') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="aycicon-"], [class*=" aycicon-"] {
+	font-family: 'aycbase';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.aycicon-hamburger:before {
+	content: "\e940";
+}
+.aycicon-bell:before {
+	content: "\e900";
+}
+.aycicon-books:before {
+	content: "\e901";
+}
+.aycicon-books2:before {
+	content: "\e902";
+}
+.aycicon-cal-check:before {
+	content: "\e903";
+}
+.aycicon-calendar:before {
+	content: "\e904";
+}
+.aycicon-calendar_square:before {
+	content: "\e905";
+}
+.aycicon-cart_empty:before {
+	content: "\e906";
+}
+.aycicon-change:before {
+	content: "\e907";
+}
+.aycicon-chat:before {
+	content: "\e908";
+}
+.aycicon-clock:before {
+	content: "\e909";
+}
+.aycicon-clock_sq_hands:before {
+	content: "\e90a";
+}
+.aycicon-close:before {
+	content: "\e90b";
+}
+.aycicon-cloud-download:before {
+	content: "\e90c";
+}
+.aycicon-colorpicker:before {
+	content: "\e90d";
+}
+.aycicon-comment:before {
+	content: "\e90e";
+}
+.aycicon-company:before {
+	content: "\e90f";
+}
+.aycicon-down_arrow:before {
+	content: "\e910";
+}
+.aycicon-down_arrow_circ:before {
+	content: "\e911";
+}
+.aycicon-down_arrow_thick:before {
+	content: "\e912";
+}
+.aycicon-down_arrow_thin:before {
+	content: "\e913";
+}
+.aycicon-download:before {
+	content: "\e914";
+}
+.aycicon-download_straight:before {
+	content: "\e915";
+}
+.aycicon-edit_circ:before {
+	content: "\e916";
+}
+.aycicon-edit_sq:before {
+	content: "\e917";
+}
+.aycicon-email:before {
+	content: "\e918";
+}
+.aycicon-email_solid:before {
+	content: "\e919";
+}
+.aycicon-enter:before {
+	content: "\e91a";
+}
+.aycicon-facebook:before {
+	content: "\e91b";
+}
+.aycicon-gear:before {
+	content: "\e91c";
+}
+.aycicon-globe:before {
+	content: "\e91d";
+}
+.aycicon-google_plus:before {
+	content: "\e91e";
+}
+.aycicon-instagram:before {
+	content: "\e91f";
+}
+.aycicon-instagram_solid:before {
+	content: "\e920";
+}
+.aycicon-left_arrow:before {
+	content: "\e921";
+}
+.aycicon-left_arrow_circ:before {
+	content: "\e922";
+}
+.aycicon-left_arrow_thick:before {
+	content: "\e923";
+}
+.aycicon-left_arrow_thin:before {
+	content: "\e924";
+}
+.aycicon-link:before {
+	content: "\e925";
+}
+.aycicon-linkedin:before {
+	content: "\e926";
+}
+.aycicon-location:before {
+	content: "\e927";
+}
+.aycicon-magnify:before {
+	content: "\e928";
+}
+.aycicon-marker_concave:before {
+	content: "\e929";
+}
+.aycicon-name:before {
+	content: "\e92a";
+}
+.aycicon-news:before {
+	content: "\e92b";
+}
+.aycicon-number_of_guests:before {
+	content: "\e92c";
+}
+.aycicon-phone:before {
+	content: "\e92d";
+}
+.aycicon-pinterest:before {
+	content: "\e92e";
+}
+.aycicon-remove_circ:before {
+	content: "\e92f";
+}
+.aycicon-right_arrow:before {
+	content: "\e930";
+}
+.aycicon-right_arrow_circ:before {
+	content: "\e931";
+}
+.aycicon-right_arrow_thick:before {
+	content: "\e932";
+}
+.aycicon-right_arrow_thin:before {
+	content: "\e933";
+}
+.aycicon-share:before {
+	content: "\e934";
+}
+.aycicon-share_box:before {
+	content: "\e935";
+}
+.aycicon-tag:before {
+	content: "\e936";
+}
+.aycicon-twitter:before {
+	content: "\e937";
+}
+.aycicon-up_arrow:before {
+	content: "\e938";
+}
+.aycicon-up_arrow_circ:before {
+	content: "\e939";
+}
+.aycicon-up_arrow_thick:before {
+	content: "\e93a";
+}
+.aycicon-up_arrow_thin:before {
+	content: "\e93b";
+}
+.aycicon-youtube:before {
+	content: "\e93c";
+}
+.aycicon-youtube_hrz:before {
+	content: "\e93d";
+}
+.aycicon-youtube_play:before {
+	content: "\e93e";
+}
+.aycicon-add_circ:before {
+	content: "\e93f";
+}
+

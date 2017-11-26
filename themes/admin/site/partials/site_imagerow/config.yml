@@ -1,0 +1,31 @@
+# A simple list of images with alt tags
+name: site_imagerow
+displayname: Image Row
+table: cms_site_partial_imagerow
+enabled: true
+columns: {}
+meta:
+  name: imagerow
+  limit: 4
+  table: cms_site_partial_imagerow_images
+  order:
+    column: displayorder
+    order: asc
+    manageable: true
+    display: image
+  columns:
+    image:
+      type: image
+      length: 10
+      enabled: true
+      required: true
+    alt:
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    displayorder:
+      type: hidden
+      length: 11
+      enabled: true
+      required: false

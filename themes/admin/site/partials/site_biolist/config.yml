@@ -1,0 +1,43 @@
+name: Biolist
+table: cms_site_partial_biolist
+enabled: true
+columns: {}
+meta:
+  name: Bios
+  table: cms_site_partial_biolist_bios
+  order:
+      column: displayorder
+      order: asc
+      manageable: true
+      display: name
+  columns:
+    name:
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    title:
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    phone:
+      type: text
+      length: 255
+      enabled: true
+      required: false
+    email:
+      type: text
+      length: 255
+      enabled: true
+      required: false
+    image:
+      type: image
+      length: 10
+      enabled: true
+      required: true
+    displayorder:
+      type: hidden
+      length: 11
+      enabled: true
+      required: false

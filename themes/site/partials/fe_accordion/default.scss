@@ -1,0 +1,101 @@
+/**************************************************************/
+/* Accordion */
+/**************************************************************/
+
+$acc-height:        54px;
+$acc-border:        none;
+$acc-bot-marg:      10px;
+
+$acc-toggle-bg:     #d6d6d6;
+$acc-toggle-color:  #202020;
+$acc-toggle-fs:     15px;
+$acc-toggle-fw:     bold;
+$acc-toggle-pad:    17px 40px 16px 20px;
+
+$acc-icon-width:    54px;
+$acc-icon-bg:       #c1c1c1;
+$acc-icon-bg-hov:   #000;
+$acc-icon-color:    #000;
+$acc-icon-color-hov:#fff;
+
+$acc-content-pad:   20px;
+$acc-content-bg:    #fdfdfd;
+$acc-content-fs:    15px;
+$acc-content-lh:    22px;
+$acc-content-color: #202020;
+$acc-content-brdr:  1px solid #ccc;
+
+
+.accordion-cont{    
+    margin-bottom:$acc-bot-marg;
+    border:$acc-border;
+}
+
+.accordion-title{
+    color:$acc-toggle-color;
+}
+
+.accordion-toggle{
+    cursor: pointer;
+    position: relative;
+    padding: $acc-toggle-pad;
+    font-size: $acc-toggle-fs;
+    min-height: $acc-height;
+    font-weight: $acc-toggle-fw;
+    background-color: $acc-toggle-bg;
+}
+
+.accordion-toggle .accordion-icon-wrap{
+    @include transition(all 0.3s ease-in-out); 
+}
+
+.accordion-toggle:hover .accordion-icon-wrap{
+    background-color: $acc-icon-bg-hov;
+    color:$acc-icon-color-hov;
+}
+
+.accordion-icon-wrap{
+    width: $acc-icon-width;
+    height: $acc-height;
+    line-height: $acc-height;
+    text-align: center;    
+    background-color: $acc-icon-bg;
+    position: absolute;
+    color:$acc-icon-color;
+    top:0px;
+    right:0px;
+}
+
+.accordion-icon-wrap .icons{
+    //color:$acc-icon-color;
+}
+
+.accordion-cont .accordion-icon{
+    @include transition(all 0.3s ease-in-out);
+    display: inline-block;
+    line-height: $acc-height;
+}
+
+.accordion-cont .active{
+    @include rotate(180deg);
+}
+
+.accordion-content{
+    display:none; 
+    padding:$acc-content-pad; 
+    background-color: $acc-content-bg;
+    border:$acc-content-brdr;
+} 
+
+.accordion-cont .entry-content p{
+    font-size:$acc-content-fs; 
+    line-height:$acc-content-lh; 
+    color:$acc-content-color;
+}
+
+.accordion-cont .entry-content p:last-child{
+    margin-bottom:0px;
+}
+.accordion-content.default{
+    display:block; 
+}

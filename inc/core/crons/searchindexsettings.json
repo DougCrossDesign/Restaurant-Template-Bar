@@ -1,0 +1,36 @@
+{
+	"tables" : {
+		"cms_core_module_events" : {
+			"title" : "title",
+			"friendlyurl" : "/events/details/",
+			"content" : [
+				"title", "description", "summary"
+			],
+			"where" : "active = 1"
+		},
+		"cms_site_module_jobpositions" : {
+			"title" : "title",
+			"friendlyurl" : "/employment/details/",
+			"content" : [
+				"subtitle", "text"
+			]
+		},
+		"cms_site_module_meeting_spaces" : {
+			"title" : "title",
+			"friendlyurl" : "/meetingspaces/details/",
+			"content" : [
+				"text"
+			]
+		},
+		"cms_core_module_pages" : {
+			"title" : "title",
+			"friendlyurl" : "/page/view/",
+			"content" : [
+				"partials"
+			],
+			"ignore" : {
+				"searchable" : 0
+			}
+		}
+	}
+}

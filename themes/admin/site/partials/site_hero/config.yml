@@ -1,0 +1,78 @@
+name: site_hero
+displayname: Homepage Hero
+table: cms_site_partial_hero
+enabled: true
+columns:
+  title:
+    type: text
+    length: 100
+    enabled: false
+    required : false
+meta:
+  name: item
+  table: cms_site_partial_hero_items
+  order:
+    column: displayorder
+    order: asc
+    manageable: true
+    display: image_desktop
+  columns:
+    image_desktop:
+      label: Image (Desktop)
+      type: image
+      length: 10
+      enabled: true
+      required: true
+    image_tablet:
+      label: Image (Tablet)
+      type: image
+      length: 10
+      enabled: true
+      required: false
+    image_mobile:
+      label: Image (Mobile)
+      type: image
+      length: 10
+      enabled: true
+      required: false
+    title:
+      label: Title
+      type: text
+      length: 100
+      enabled: true
+      required: false
+    subtitle:
+      label: Subtitle
+      type: text
+      length: 70
+      enabled: true
+      required: false
+    text:
+      label: Text
+      type: textarea_raw
+      length: 220
+      enabled: true
+      required: false
+    link:
+      label: Link
+      type: text
+      length: 2048
+      enabled: true
+      required: false
+    label:
+      label: Label
+      type: text
+      length: 40
+      enabled: true
+      required: false
+    newwindow:
+      label: New Window
+      type: checkbox
+      length: 1
+      enabled: true
+      required: false
+    displayorder:
+      type: hidden
+      length: 11
+      enabled: true
+      required: false

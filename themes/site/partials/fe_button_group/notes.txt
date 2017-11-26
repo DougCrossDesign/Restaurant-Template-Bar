@@ -1,0 +1,38 @@
+Header [Optional]
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: Recommend less than 100
+
+
+Alignment [Required]
+------------------------------------------
+Input Type 		: Select Box (Dropdown)
+Options			: Left, Right, Center
+
+
+Button Style [Required]
+------------------------------------------
+Input Type 		: Select Box (Dropdown)
+Options			: btn, btn small, btn2, btn2 small
+
+
+> [Repeating Elements]
+
+Title
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: 30 characters
+
+
+Link
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: Unlimited
+
+
+Open in new Window?
+------------------------------------------
+Input Type 		: Checkbox
+Options			: Yes / No
+
+> End Repeating

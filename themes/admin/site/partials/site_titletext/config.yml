@@ -1,0 +1,15 @@
+name: site_titletext
+displayname: Title & HTML Textarea
+table: cms_site_partial_titletext
+enabled: true
+columns:
+  title:
+    type: text
+    length: 255
+    enabled: true
+    required : true
+  text:
+    type: textarea
+    length: 4096
+    enabled: true
+    required : true

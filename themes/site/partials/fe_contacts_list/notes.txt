@@ -1,0 +1,38 @@
+Header [Optional]
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: Recommend less than 100
+
+
+Content [Optional]
+------------------------------------------
+Input Type 		: TinyMCE
+Char Count		: Unlimited
+
+
+> [Repeating Elements]
+
+Name
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: Cant limit
+
+
+Title
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: 75 Characters
+
+
+Phone [Optional]
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: 20 characters
+
+
+Email
+------------------------------------------
+Input Type 		: Input[email]
+Char Count		: Unlimited
+
+> End Repeating

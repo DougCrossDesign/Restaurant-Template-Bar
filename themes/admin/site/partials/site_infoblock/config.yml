@@ -1,0 +1,68 @@
+name: site_infoblock
+displayname: Info Block
+table: cms_site_partial_infoblock
+enabled: true
+columns:
+  title:
+    type: text
+    length: 100
+    enabled: true
+    required : true
+  subtitle:
+    type: text
+    length: 100
+    enabled: true
+    required : false
+  text:
+    type: textarea_raw
+    length: 2048
+    enabled: true
+    required : true
+  link:
+    label: Link 1 - Please enter a Link
+    type: text
+    length: 2048
+    enabled: true
+    required : false
+  pdf:
+    label: PDF 1 - Please upload a PDF
+    type: pdf
+    length: 255
+    enabled: true
+    required : false
+  label:
+    label: Link 1 - Link / PDF Name
+    type: text
+    length: 21
+    enabled: true
+    required : false
+  newwindow:
+    label: Link 1 - New Window
+    type: checkbox
+    length: 1
+    enabled: true
+    required : false
+  link_2:
+    label: Link 2 - Please enter a Link
+    type: text
+    length: 2048
+    enabled: true
+    required : false
+  pdf_2:
+    label: PDF 2 - Please upload a PDF
+    type: pdf
+    length: 255
+    enabled: true
+    required : false
+  label_2:
+    label: Link 2 - Link / PDF Name
+    type: text
+    length: 21
+    enabled: true
+    required : false
+  newwindow_2:
+    label: Link 2 - New Window
+    type: checkbox
+    length: 1
+    enabled: true
+    required : false

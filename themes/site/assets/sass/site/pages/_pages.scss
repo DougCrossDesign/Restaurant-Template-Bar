@@ -1,0 +1,590 @@
+///////////////////////////////////////
+// General
+///////////////////////////////////////
+
+.accent-lines:before{
+	width:60px;
+	height:2px;
+	background-color: #fff;
+	position: absolute;
+	display: block;
+	left:-65px;
+	top:49%;
+	content: ' ';
+}
+.accent-lines:after{
+	width:60px;
+	height:2px;
+	background-color: #fff;
+	position: absolute;
+	display: block;
+	right:-65px;
+	top:49%;
+	content: ' ';
+}
+
+.page-header{
+	position: relative;
+	background-color: #030d30;
+	height:510px;
+	background-size: cover;
+	background-position: center center;
+	z-index:2;
+	@media screen and (max-width : $bp-sm) {
+		height:550px;
+	}
+	@media screen and (max-width : $bp-xsm) {
+		height:400px;
+	}
+}
+
+.page-header-small{
+	position: relative;
+	background-color: #030d30;
+	height:350px;
+	background-size: cover;
+	background-position: center center;
+	z-index:2;
+	.page-header-text{
+		position: absolute;
+		top:70%;
+	}
+}
+
+.page-header-text{
+	display: inline-block;
+	color:#fff;
+	text-align: center;
+	position:absolute; top:65%; left:50%; @include transform(translate(-50%, -50%));
+	@media screen and (max-width : $bp-xsm) {
+		top:60%;
+		max-width: 300px;
+	}
+	h1{
+		font-size: 85px;
+		font-weight: normal;
+		text-align: center;
+		text-shadow: 8px 8px #000;
+		padding-bottom: 50px;
+		letter-spacing: 4px;
+		line-height: 80px;
+		@media screen and (max-width: $bp-xsm){
+			font-size: 40px;
+		}
+	}
+	p{
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 2px;
+		@media screen and (max-width: $bp-sm){
+			max-width: 700px;
+		}
+		@media screen and (max-width: $bp-xsm){
+			max-width: 300px;
+			font-size: 16px;
+		}
+	}
+	.small{
+		font-size:28px;
+	}
+}
+
+.page-content{
+	padding:60px 0px 0px 0px;
+	background-color: $c2;
+	@media screen and (max-width: $bp-xsm){
+		padding: 0px;
+	}
+}
+
+.main-content{
+	background-color: $c2;
+}
+
+
+///////////////////////////////////////
+// About
+///////////////////////////////////////
+.pg_about{
+	.about-content-title{
+		color: $c3;
+		font-size: 30px;
+		letter-spacing: 2px;
+		padding-bottom: 30px;
+		line-height: 1.5;
+	}
+	.entry-content{
+		p{
+			font-family: $font2;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 1.5;
+			letter-spacing: 1px;
+		}
+	}
+	.about-content{
+		padding: 50px;
+		.entry-content{
+			padding-bottom: 20px;
+		}
+	}
+	.about-img-row{
+		padding-bottom: 60px;
+		img{
+			width: 100%;
+			margin: 0 5px;
+		}
+	}
+	@media screen and (max-width: $bp-sm){
+		.about-img-row{
+			img{
+				width: 80%;
+				margin: 10px auto;
+			}
+		}
+		.entry-content{
+			p{
+				font-size: 16px;
+			}
+		}
+		.about-content{
+			padding: 50px 30px;
+		}
+	}
+}
+
+
+///////////////////////////////////////
+// ADA
+///////////////////////////////////////
+.pg_ada{
+	.ada-content{
+		h2{
+			padding: 50px;
+
+		}
+		p{
+			font-weight: 700;
+			text-align: justify;
+			line-height: 1.5;
+			padding-bottom: 40px;
+		}
+		ul{
+			text-align: left;
+			li{
+				list-style: disc;
+				max-width: $wrap-xsm;
+				margin: 1% auto;
+				line-height: 1.5;
+			}
+		}
+	}
+	@media screen and (max-width: $bp-xsm){
+		.page-header-text{
+			h1{
+				font-size: 30px;
+				line-height: 30px;
+			}
+		}
+		.ada-content{
+			max-width: 300px;
+			margin: auto;
+		}
+	}
+}
+
+///////////////////////////////////////
+// Parties
+///////////////////////////////////////
+.pg_parties{
+	.page-header{
+		background-position: center bottom;
+		background-repeat: no-repeat;
+	}
+	.parties-intro-text{
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 30px 0px 50px 0px;
+		p{
+			font-size: 20px;
+			line-height: 1.2;
+		}
+	}
+	.dropdown{
+		margin-top: 15px;
+		.dropbtn{
+			background-color: #fff;
+			color: $c1;
+			border: 2px solid $c1;
+			font-weight: normal;
+			text-transform: none;
+			font-family: $font2;
+			font-size: 17px;
+			padding: 10px 15px;
+		}
+	}
+	.parties-side{
+		background-color: $c4;
+		padding: 30px;
+		color: white;
+		line-height: 1.5;
+	}
+	.parties-side-button{
+		background-color: #fff;
+		padding: 10px 20px;
+		width: 90%;
+		margin: 15% auto 5% auto;
+		font-family: $font1;
+	}
+	@media screen and (max-width: $bp-sm){
+		#parties_form{
+			width: 100%;
+			margin: auto;
+			float: none;
+		}
+		.parties-side{
+			width: 60%;
+			margin: auto;
+			float: none;
+			margin-bottom: 40px;
+		}
+	}
+	@media screen and (max-width: $bp-xsm){
+			.parties-intro-text{
+				padding: 20px 0px 30px 0px;
+				p{
+					font-size: 16px;
+					padding: 0px;
+				}
+			}
+			.parties-side{
+				width: 90%;
+			}
+	}
+}
+///////////////////////////////////////
+// Locations
+///////////////////////////////////////
+
+// .locations-wrap{
+// 	padding-bottom:60px;
+// }
+//
+// .gmap-locations{
+// 	height:500px;
+// 	box-shadow: 0px 0px 80px 0px rgba(#000,.2);
+// }
+//
+// .locations-img{
+// 	margin-bottom:20px;
+// }
+//
+// .locations-cont-wrap{
+// 	font-size:20px;
+// }
+//
+// .locations-cont-title{
+// 	font-family:$font2;
+// 	font-weight: bold;
+// 	text-transform: uppercase;
+// 	font-size:24px;
+// 	margin-bottom: 10px;
+// }
+//
+// .locations-cont-address-wrap{
+// 	margin-bottom:10px;
+// }
+//
+// .locations-cont-address{}
+// .locations-cont-address2{}
+//
+// .locations-cont-phone{
+// 	margin-bottom:10px;
+// }
+//
+// .locations-cont-web{}
+//
+
+
+///////////////////////////////////////
+// Find Us
+///////////////////////////////////////
+.pg_findus{
+	.find-us-side{
+		background-color: $c1;
+		color: $c2;
+		margin-top: 20px;
+		padding-top: 30px;
+		p{
+			padding-bottom: 20px;
+			font-weight: 400;
+			letter-spacing: 1px;
+			font-size: 20px;
+			line-height: 1.2;
+			span{
+				font-weight: 700;
+			}
+		}
+	}
+	.find-us-bottom{
+		padding-bottom: 40px;
+	}
+	.map-container{
+			border:2px solid $c1;
+	}
+	.gmap{
+			position: relative;
+			width: 100%;
+			height: 350px;
+	}
+	.findus-directions{
+		background-color: $c4;
+		padding:15px 0px 10px 0px;
+		margin: auto;
+		.input{
+			input{
+				width:100%;
+			}
+			&:focus{
+				background-color: #fff;
+			}
+		}
+		.map-submit input{
+			float: right;
+			background-color: #fff;
+			color: $c1;
+			padding: 13px 20px;
+			border: none;
+			font-size: 24px;
+			font-weight: 800;
+		}
+	}
+	.find-us-subway{
+		p{
+			text-align: left;
+			line-height: 60px;
+		}
+		.find-us-train-head{
+			font-weight: 700;
+			font-size: 20px;
+			letter-spacing: .5px;
+		}
+		.subway-circle{
+			margin: 8px 0px;
+			p{
+				line-height: 40px;
+				background-color: $c4;
+				border-style: solid;
+				border-radius: 50%;
+				border-color: $c4;
+				color: $c2;
+				font-weight: 700;
+				transform-origin: center center;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+			}
+		}
+		.subway-text{
+			font-size: 14px;
+			line-height: 40px;
+			font-weight: 700;
+		}
+	}
+	.google-view{
+		padding-top: 60px;
+	}
+	@media screen and (max-width: $bp-sm){
+		.col2-3{
+			width: 100%;
+			float: none;
+			margin: auto;
+		}
+		.find-us-side{
+			width: 50%;
+			float: none;
+			margin: 0 auto 30px;
+		}
+		.find-us-subway{
+			width: 100%;
+			float: none;
+			margin: 30px auto;
+
+		}
+	}
+	@media screen and (max-width: $bp-xsm){
+		.parties-intro-text{
+			padding-top: 40px;
+		}
+		.find-us-side{
+			width: 100%;
+
+		}
+		.find-us-subway{
+			padding-left: 20px;
+
+		}
+		.map-container{
+			.findus-directions{
+				label{
+					display: none;
+				}
+				.directions-submit{
+					.col4-5{
+						width: 95%;
+						margin: auto;
+						float: none;
+					}
+					.col1-5{
+						width: 95%;
+						margin: auto;
+						float: none;
+						input{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////////////
+// Thank You
+///////////////////////////////////////
+
+.pg_thankyou{
+	.thank-you-content{
+		padding: 60px 0px 100px 0px;
+		p{
+			margin-bottom: 20px;
+			font-size: 20px;
+			line-height: 1.25;
+			font-weight: 700;
+		}
+	}
+	@media screen and (max-width: $bp-xsm){
+		.thank-you-content{
+			padding: 60px 20px 100px;
+			p{
+				font-size: 16px;
+				line-height: 1.5;
+			}
+		}
+	}
+}
+///////////////////////////////////////
+// Specials
+///////////////////////////////////////
+
+.pg_specials{
+	.page-content{
+		background-color: $c2;
+	}
+	.specials-days{
+		padding-bottom: 80px;
+	}
+	.specials-content{
+		padding: 40px 0px 80px 0px;
+		p{
+		font-weight: 700;
+		font-size: 18px;
+		letter-spacing: 1px;
+		line-height: 1.5;
+		}
+	}
+	.specials-day-left{
+		background-color: $c5;
+		position:relative;
+		padding: 80px 50px 60px 50px;
+		text-align: left;
+		.specials-left-title{
+			letter-spacing: 1px;
+			line-height: 1.5;
+		}
+		.specials-left-time{
+			font-style: italic;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 1.5;
+			padding-bottom: 30px;
+			letter-spacing: 1.5px;
+		}
+		.specials-left-content{
+			width: 75%;
+			font-size: 16px;
+			text-transform: capitalize;
+			letter-spacing: 1px;
+			font-weight: 700;
+			line-height: 1.5;
+		}
+	}
+	.specials-left-topbar{
+		background-color: $c4;
+		width: 30%;
+		height: 40px;
+		position: absolute;
+		top: 0;
+		left:0;
+		p{
+			color: $c2;
+			font-family: $font1;
+			padding: 10px 0px;
+			text-align: center;
+		}
+	}
+	.specials-day-right{
+		background-color: $c1;
+		color: $c2;
+		.specials-right-title, .specials-right-time{
+			letter-spacing: 1px;
+			font-weight: normal;
+			line-height: 1.2;
+		}
+		.specials-right-content{
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-transform: capitalize;
+			padding:20px 20px;
+			line-height: 1.5;
+		}
+	}
+	@media screen and (max-width: $bp-sm){
+		.specials-day-left{
+			width: 90%;
+			margin: auto;
+			float: none;
+		}
+		.specials-left-topbar{
+			width: 50%;
+		}
+		.specials-day-right{
+			width: 90%;
+			margin: 20px auto 60px;
+			float: none;
+		}
+	}
+	@media screen and (max-width: $bp-xsm){
+		.specials-content{
+			p{
+				font-size: 16px;
+			}
+		}
+		.specials-left-topbar{
+			width: 100%;
+		}
+	}
+}
+///////////////////////////////////////
+// Newsletter
+///////////////////////////////////////
+
+.pg_newsletter{
+	@media screen and (max-width: $bp-xsm){
+		h1{
+			font-size: 35px;
+		}
+	}
+
+}

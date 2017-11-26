@@ -1,0 +1,63 @@
+> [Repeating Elements]
+
+Hero Image - Large
+------------------------------------------
+Input Type 		: File Upload
+Format			: Jpg
+Image Size		: 2000x500
+Image Resize	: Center Crop
+
+
+Hero Image - Tablet
+------------------------------------------
+Input Type 		: File Upload
+Format			: Jpg
+Image Size		: 960x500
+Image Resize	: Center Crop
+
+
+Hero Image - Mobile
+------------------------------------------
+Input Type 		: File Upload
+Format			: Jpg
+Image Size		: 700x400
+Image Resize	: Center Crop
+
+
+Header
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: 100 Characters
+
+
+Byline Header
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: 70 Characters
+
+
+Description
+------------------------------------------
+Input Type 		: TextArea
+Char Count		: 220 Characters
+Other			: Recommend 140c
+
+
+Link Text
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: 40 Characters
+
+
+Link
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: Unlimited
+
+
+Open in new Window?
+------------------------------------------
+Input Type 		: Checkbox
+Options			: Yes / No
+
+> End Repeating

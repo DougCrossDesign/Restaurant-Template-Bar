@@ -1,0 +1,160 @@
+/*---------------------------------------
+	Layout
+---------------------------------------*/
+
+//main without sidebar
+.main-content{
+	width: inherit;
+	display: block;
+}
+
+// Main w/ Sidebar
+.main-sidebar{
+	width: calc( 100% - #{$main-sidebar-width} );
+	float: left;
+	min-height: 875px;
+	@media screen and (max-width : $main-sidebar-bp) {
+		width:inherit;
+		float: inherit;
+		display: block;
+		min-height: inherit;
+	}
+}
+
+//Sidebar
+.sidebar{
+	width: $main-sidebar-width;
+	float: right;
+	background: $main-sidebar-bg;
+	@media screen and (max-width : $main-sidebar-bp) {
+		width:inherit;
+		float: none;
+		display: block;
+	}
+}
+
+//standard content block (in main) wrap
+.content-block{
+	padding: $main-content-pad;
+	@media screen and (max-width : $bp-md) {
+		padding: $main-content-pad-md;
+	}
+	@media screen and (max-width : $bp-sm) {
+		padding: $main-content-pad-sm;
+	}
+	@media screen and (max-width : $bp-xsm) {
+		padding: $main-content-pad-xsm;
+	}
+}
+
+/*---------------------------------------
+	Wraps
+---------------------------------------*/
+
+.wrap-xsm{
+	max-width:$wrap-xsm;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.wrap-sm{
+	max-width:$wrap-sm;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.wrap{
+	max-width:$wrap-md;
+	margin-left:auto;
+	margin-right:auto;
+	@media screen and (max-width: $bp-md){
+		max-width: $wrap-sm;
+	}
+	@media screen and (max-width: $bp-sm){
+		max-width: 750px;
+	}
+}
+
+.wrap-lg{
+	max-width:$wrap-lg;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.wrap-xlg{
+	max-width:$wrap-xlg;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.wrap-pad-sm{
+	padding-left:$wrap-pad-sm;
+	padding-right:$wrap-pad-sm;
+	@media screen and (max-width : $wrap-pad-bp1) {
+		padding-left:$wrap-pad-bp1-size;
+		padding-right:$wrap-pad-bp1-size;
+	}
+	@media screen and (max-width : $wrap-pad-bp2) {
+		padding-left:$wrap-pad-bp2-size;
+		padding-right:$wrap-pad-bp2-size;
+	}
+}
+
+.wrap-pad{
+	padding-left:$wrap-pad-md;
+	padding-right:$wrap-pad-md;
+	@media screen and (max-width : $wrap-pad-bp1) {
+		padding-left:$wrap-pad-bp1-size;
+		padding-right:$wrap-pad-bp1-size;
+	}
+	@media screen and (max-width : $wrap-pad-bp2) {
+		padding-left:$wrap-pad-bp2-size;
+		padding-right:$wrap-pad-bp2-size;
+	}
+}
+
+.wrap-pad-lg{
+	padding-left:$wrap-pad-lg;
+	padding-right:$wrap-pad-lg;
+	@media screen and (max-width : $wrap-pad-bp1) {
+		padding-left:$wrap-pad-bp1-size;
+		padding-right:$wrap-pad-bp1-size;
+	}
+	@media screen and (max-width : $wrap-pad-bp2) {
+		padding-left:$wrap-pad-bp2-size;
+		padding-right:$wrap-pad-bp2-size;
+	}
+}
+
+.remove-pad-md{
+	@media screen and (max-width : $bp-md) {
+		padding:0px !important;
+	}
+}
+
+.remove-pad-sm{
+	@media screen and (max-width : $bp-sm) {
+		padding:0px !important;
+	}
+}
+
+.remove-pad-xsm{
+	@media screen and (max-width : $bp-xsm) {
+		padding:0px !important;
+	}
+}
+
+.wrap-vpad-sm{
+	padding-top:$wrap-pad-sm;
+	padding-bottom:$wrap-pad-sm;
+}
+
+.wrap-vpad{
+	padding-top:$wrap-pad-md;
+	padding-bottom:$wrap-pad-md;
+}
+
+.wrap-vpad-lg{
+	padding-top:$wrap-pad-lg;
+	padding-bottom:$wrap-pad-lg;
+}

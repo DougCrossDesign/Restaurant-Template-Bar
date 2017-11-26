@@ -1,0 +1,77 @@
+ .contacts-list{
+	.contacts-list-hr{
+		border-bottom: 1px solid #ccc;
+		max-width: 300px;
+ 		margin:0px auto 20px auto;
+	}
+ 	.contacts-list-desc{
+ 		max-width: 600px;
+ 		margin:0px auto;
+ 		p{
+ 			//default size overide
+ 		}
+ 	}
+ }
+
+ .contacts-list-bios{
+	ul{
+		li{
+			background-color: $c5;
+			color:$c1;
+			@media screen and (max-width : $bp-md) {
+				max-width: 600px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			@media screen and (max-width : $bp-xsm) {
+				max-width:350px;
+			}
+		}
+	}
+ }
+
+.contacts-list-bios-img{
+	width: 50%;
+	float: left;
+	img{
+		max-width: 100%;
+	}
+	@media screen and (max-width : $bp-xsm) {
+		width:inherit;
+		float: inherit;
+	}
+}
+
+.contacts-list-bios-cont{
+	width: 50%;
+	float: left;
+	position: relative;
+	padding: 25px;
+	@media screen and (max-width : $bp-xsm) {
+		width:inherit;
+		float: inherit;
+	}
+}
+
+.contacts-list-bios-name{
+	font-weight: $fw-bold;
+	font-size: 28px;
+	line-height: 30px;
+}
+
+.contacts-list-bios-subt{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.contacts-list-bios-cr{
+
+}
+
+.contacts-list-bios-c1{
+
+}
+
+.contacts-list-bios-c2{
+	font-weight: $fw-bold;
+}

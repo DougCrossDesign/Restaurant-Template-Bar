@@ -1,0 +1,26 @@
+Header [Optional]
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: Recommend less than 100
+
+
+> [Repeating Elements]
+> Recommend less than 50 per page
+
+Title 
+------------------------------------------
+Input Type 		: Input[text]
+Char Count		: Recommend less than 100
+
+
+Content 
+------------------------------------------
+Input Type 		: TinyMCE
+Char Count		: Unlimited
+
+> End Repeating
+
+
+Other
+------------------------------------------
+- Uses AYC Icon Base (Arrows)

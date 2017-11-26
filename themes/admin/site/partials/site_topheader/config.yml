@@ -1,0 +1,15 @@
+name: site_topheader
+displayname: Top Header
+table: cms_site_partial_topheader
+enabled: true
+columns:
+  title:
+    type: text
+    length: 20
+    enabled: true
+    required : true
+  image:
+    type: image
+    length: 10
+    enabled: true
+    required : true

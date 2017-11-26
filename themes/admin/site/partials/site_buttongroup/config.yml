@@ -1,0 +1,56 @@
+name: site_buttongroup
+displayname: Button Group
+table: cms_site_partial_buttongroup
+enabled: true
+columns:
+  title:
+    type: text
+    length: 100
+    enabled: false
+    required : false
+  position:
+    type: select
+    length: 100
+    enabled: true
+    required : true
+  style:
+    type: select
+    length: 100
+    enabled: true
+    required : true
+meta:
+  name: button
+  table: cms_site_partial_buttongroup_buttons
+  order:
+    column: displayorder
+    order: asc
+    manageable: true
+    display: label
+  columns:
+    link:
+      label: Link (Link or PDF Required)
+      type: text
+      length: 2048
+      enabled: true
+      required: false
+    pdf:
+      label: PDF (Link or PDF Required)
+      type: pdf
+      length: 2048
+      enabled: true
+      required: false
+    label:
+      type: text
+      length: 255
+      enabled: true
+      required: true
+    newwindow:
+      type: checkbox
+      length: 1
+      enabled: true
+      required: false
+    displayorder:
+      type: hidden
+      length: 11
+      enabled: true
+      required: false
